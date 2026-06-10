@@ -1,0 +1,194 @@
+body {
+    background-color: rgb(34, 34, 36);
+    max-width: 100%;
+    margin: 0;
+    
+
+}
+
+header {
+   display: flex;
+   padding-left: 9px;
+   margin-top: 0;
+   height: 80px;
+   width: 100%;
+   background-color: #81C784;
+   font-family: "Inter Tight", sans-serif;
+   border-bottom: 4.4px solid rgb(115, 151, 113);
+}
+
+#h1fisio {
+    position: relative;
+    font-size: 56px;
+    margin-top: 5px;
+    font-weight: 410;
+    text-shadow: 2px 2px 4.5px #163b04;
+    color: #ebfde6;
+    left: 5px;
+    
+    
+    
+}
+
+.aba1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url(Ref1.jpg);
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    border-bottom: 4.4px solid rgb(115, 151, 113);
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #000000b3;
+    height: 350px;
+    box-shadow: 0px 0px 20px #000;
+
+}
+
+
+.frases1a {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: 25px;
+    color: #d9ffd0;
+    text-shadow: 2px 2px 1px rgb(97, 126, 93);
+    top: 58px;
+    
+}
+
+#h2t1 {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+#pt1 {
+    display: flex;
+    position: relative;
+    width: 760px;
+    font-weight: 530;
+    font-family: "Inter Tight", sans-serif;
+    color: #b9cebb;
+    text-shadow: 2px 2px 3px rgb(41, 56, 41);
+    font-size: 18px;
+    left: 39px;
+    
+
+    
+}
+
+#img1 {
+    
+    width: 500px;
+    top: 09px;
+    height: auto;
+    border-radius: 30px;
+    justify-self: flex-end;    
+    align-self: flex-end;
+    margin-right: 28px;
+}
+
+
+
+
+
+
+
+.aba2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url(Ref2.jpg);
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    border-bottom: 4.4px solid rgb(115, 151, 113);
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #000000b3;
+    height: 350px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+
+.frases2a {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: 25px;
+    color: #d9ffd0;
+    text-shadow: 2px 2px 1px rgb(97, 126, 93);
+    top: 58px;
+    
+}
+
+#h2t2 {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+#pt2 {
+    display: flex;
+    position: relative;
+    width: 760px;
+    font-weight: 530;
+    font-family: "Inter Tight", sans-serif;
+    color: #b9cebb;
+    text-shadow: 2px 2px 3px rgb(41, 56, 41);
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+
+    
+}
+
+#btntrocar1 {
+    position: absolute;
+    right: 17px;
+    top: 300px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    
+    border-radius: 12px;
+    
+
+}
+
+#btntrocar2 {
+    position: absolute;
+    left: 17px;
+    top: 300px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    
+    border-radius: 12px;
+}
+
+
+#btnproximo {
+    width: 40px;
+}
+
+#btnanterior {
+    width: 40px;
+    
+    
+}

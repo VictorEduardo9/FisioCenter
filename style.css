@@ -21,7 +21,7 @@ header {
     position: relative;
     font-size: 56px;
     margin-top: 5px;
-    font-weight: 410;
+    font-weight: 420;
     text-shadow: 2px 2px 4.5px #163b04;
     color: #ebfde6;
     left: 5px;
@@ -56,7 +56,7 @@ header {
     position: relative;
     justify-self: center;
     align-self: center;
-    font-family: "Edu NSW ACT Cursive", cursive;
+    font-family: "Inter Tight", sans-serif;
     font-size: 25px;
     color: #d9ffd0;
     text-shadow: 2px 2px 1px rgb(97, 126, 93);
@@ -128,7 +128,7 @@ header {
     position: relative;
     justify-self: center;
     align-self: center;
-    font-family: "Edu NSW ACT Cursive", cursive;
+    font-family: "Inter Tight", sans-serif;
     font-size: 25px;
     color: #d9ffd0;
     text-shadow: 2px 2px 1px rgb(97, 126, 93);
@@ -158,6 +158,30 @@ header {
     
 }
 
+#btnagendar {
+    display: flex;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    background-color: #9de0a0;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 0px;
+    width: 248px;
+    height: 39px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #9de0a0;
+
+}
+
 #btntrocar1 {
     position: absolute;
     right: 17px;
@@ -165,7 +189,6 @@ header {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    
     border-radius: 12px;
     
 
@@ -191,4 +214,19 @@ header {
     width: 40px;
     
     
+}
+
+.aba1, .aba2 {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

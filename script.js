@@ -1,4 +1,4 @@
-document.getElementById("btntrocar1").addEventListener("click", () => {
+const trocaraba1 = document.getElementById("btntrocar1").addEventListener("click", () => {
     const aba1 = document.getElementById("aba1");
     const aba2 = document.getElementById("aba2");
 
@@ -13,7 +13,7 @@ document.getElementById("btntrocar1").addEventListener("click", () => {
     
 });
 
-document.getElementById("btntrocar2").addEventListener("click", () => {
+const trocaraba2 = document.getElementById("btntrocar2").addEventListener("click", () => {
     const aba1 = document.getElementById("aba1");
     const aba2 = document.getElementById("aba2");
 

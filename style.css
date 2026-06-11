@@ -2,6 +2,7 @@ body {
     background-color: rgb(34, 34, 36);
     max-width: 100%;
     margin: 0;
+    font-family: "Inter Tight", sans-serif;
     
 
 }
@@ -12,7 +13,7 @@ header {
    margin-top: 0;
    height: 80px;
    width: 100%;
-   background-color: #81C784;
+   background-color: #81C784b3;
    font-family: "Inter Tight", sans-serif;
    border-bottom: 4.4px solid rgb(115, 151, 113);
 }
@@ -201,7 +202,6 @@ header {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    
     border-radius: 12px;
 }
 
@@ -220,6 +220,7 @@ header {
     animation: slideIn 0.5s ease-in-out;
 }
 
+
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -230,3 +231,112 @@ header {
         transform: translateX(0);
     }
 }
+
+.aba3 {
+    display: flex;
+    flex-direction: column;
+    height: 820px;
+    border-bottom: 4.4px solid rgb(115, 151, 113);
+    overflow: hidden;
+    gap: 20px;
+}
+
+.titulo {
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#tituloaba3 {
+    color: #ebfde6;
+    font-weight: 630;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgb(142, 165, 131);
+    animation: deslizar 26s linear infinite;
+   
+}
+
+
+@keyframes deslizar {
+    100% {
+        transform:translateX(100%)
+    }
+
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+.fisioterapia {
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+#ref5 {
+    width: 310px;
+    height: 240px;
+    border-radius: 18px;
+    border: 2.6px solid rgb(115, 151, 113)b3;
+    box-shadow: 0px 0px 30px rgb(115, 151, 113);
+}
+
+#frasefisio {
+    color: #b9cebb;
+    width: 350px;
+    font-size: 28px;
+    margin-top: 6px;
+    text-shadow: 2px 2px 2.5px rgb(97, 126, 93);
+    font-weight: 300;
+    margin-left: 8px;
+
+}
+
+.pilates {
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+#ref4 {
+    width: 310px;
+    height: 240px;
+    border-radius: 18px;
+    border: 2.6px solid rgb(115, 151, 113)b3;
+    box-shadow: 0px 0px 30px rgb(115, 151, 113);
+}
+
+#frasepilates {
+    color: #b9cebb;
+    width: 390px;
+    font-size: 28px;
+    margin-top: 6px;
+    text-shadow: 2px 2px 2.5px rgb(97, 126, 93);
+    font-weight: 300;
+    margin-left: 8px;
+
+}
+
+#ref4:hover, #ref5:hover , #btnagendar:hover {
+    animation: passar 0.09s linear;
+    transform: scale(1.1);
+}
+
+@keyframes passar {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+    
+}
+

@@ -3,6 +3,7 @@ body {
     max-width: 100%;
     margin: 0;
     font-family: "Inter Tight", sans-serif;
+    overflow-x: hidden;
     
 
 }
@@ -13,7 +14,7 @@ header {
    margin-top: 0;
    height: 80px;
    width: 100%;
-   background-color: #81C784b3;
+   background-color: #40533bb3;
    font-family: "Inter Tight", sans-serif;
    border-bottom: 4.4px solid rgb(115, 151, 113);
 }
@@ -26,6 +27,7 @@ header {
     text-shadow: 2px 2px 4.5px #163b04;
     color: #ebfde6;
     left: 5px;
+    cursor: default;
     
     
     
@@ -39,7 +41,8 @@ header {
     background-size: cover;
     height: 450px;
     max-width: 100%;
-    border-bottom: 4.4px solid rgb(115, 151, 113);
+    border-bottom: 1.6px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 35px rgb(115, 151, 113);
 }
 
 .box1 {
@@ -69,6 +72,7 @@ header {
     position: relative;
     justify-self: center;
     align-self: center;
+    cursor: default;
     
 }
 
@@ -112,7 +116,8 @@ header {
     background-size: cover;
     height: 450px;
     max-width: 100%;
-    border-bottom: 4.4px solid rgb(115, 151, 113);
+    border-bottom: 1.6px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 35px rgb(115, 151, 113);
 }
 
 .box2 {
@@ -141,6 +146,7 @@ header {
     position: relative;
     justify-self: center;
     align-self: center;
+    cursor: default;
     
 }
 
@@ -235,8 +241,9 @@ header {
 .aba3 {
     display: flex;
     flex-direction: column;
-    height: 820px;
-    border-bottom: 4.4px solid rgb(115, 151, 113);
+    height: 800px;
+    border-bottom: 1.6px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 35px rgb(115, 151, 113);
     overflow: hidden;
     gap: 20px;
 }
@@ -255,7 +262,7 @@ header {
     font-size: 50px;
     text-shadow: 0px 0px 10px rgb(142, 165, 131);
     animation: deslizar 26s linear infinite;
-   
+    cursor: default;
 }
 
 
@@ -324,7 +331,8 @@ header {
 
 }
 
-#ref4:hover, #ref5:hover , #btnagendar:hover {
+#ref4:hover, #ref5:hover , #btnagendar:hover , #fisio1:hover ,
+ #fisio2:hover , #fisio3:hover , #btnanterior:hover , #btnproximo:hover{
     animation: passar 0.09s linear;
     transform: scale(1.1);
 }
@@ -340,3 +348,85 @@ header {
     
 }
 
+.aba4 {
+    padding-top: 17px;
+    height: 528px;
+    border-bottom: 1.6px solid rgb(115, 151, 113);
+    border-top: 0px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 25px rgb(115, 151, 113);
+}
+
+#equipe {
+    color: #ebfde6;
+    text-shadow: 2px 2px 4px rgb(159, 179, 156);
+    top: 58px;
+    margin-left: 37px;
+    margin-top: 30px;
+    font-size: 34px;
+    cursor: default;
+    margin-bottom: 50px;
+}
+
+.funcionarios {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+    
+}
+
+#fisio1, #fisio2, #fisio3 {
+    width: 290px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #CDCBCC;
+}
+
+#pfisio {
+    color: rgb(245, 238, 238);
+    text-shadow: 0px 0px 10px rgb(161, 202, 145);
+}
+
+.funcionario1, .funcionario2, .funcionario3 {
+    justify-items: center;
+    align-items: center;
+}
+
+.aba5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    background-color: #1d221cb3;
+}
+
+.aba5voltar{
+    align-items: center;
+    justify-items: center;
+}
+
+#h3aba5 {
+    color: #defad8;
+    text-shadow: 0px 0px 25px rgb(12, 20, 11);
+
+    
+}
+
+.instagram {
+    bottom: 0px;
+    left: 19px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#instalogo {
+    width: 15px;
+    margin-right: 2.1px;
+}
+
+#instap {
+    color: white;
+    font-weight: 600;
+}

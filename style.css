@@ -30,6 +30,50 @@ header {
     cursor: default;
     
     
+}
+
+.arealogin {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 8px;
+    top: 8px;
+    
+}
+
+#usuario {
+    color: white;
+    font-size: 16px;
+    font-weight: 560;
+    margin-bottom: 5px;
+
+}
+
+#logingoogle {
+
+    right: 8px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#googleimg {
+    width: 160px;
+    height: auto;
+    
+}
+
+#logoutgoogle {
+    right: 8px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#sairimg {
+    width: 160px;
+    
+    height: auto;
     
 }
 
@@ -86,6 +130,7 @@ header {
     text-shadow: 2px 2px 3px rgb(41, 56, 41);
     font-size: 18px;
     left: 39px;
+    cursor: default;
     
 
     
@@ -161,6 +206,7 @@ header {
     font-size: 18px;
     justify-self: center;
     align-self: center;
+    cursor: default;
 
     
 }
@@ -176,7 +222,7 @@ header {
     justify-items: center;
     align-items: center;
     border: 0px;
-    width: 248px;
+    width: 268px;
     height: 39px;
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -241,7 +287,7 @@ header {
 .aba3 {
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 990px;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
     overflow: hidden;
@@ -287,21 +333,22 @@ header {
 }
 
 #ref5 {
-    width: 310px;
-    height: 240px;
+    width: 410px;
+    height: 340px;
     border-radius: 18px;
-    border: 2.6px solid rgb(115, 151, 113)b3;
+    border: 1.8px solid rgb(115, 151, 113);
     box-shadow: 0px 0px 30px rgb(115, 151, 113);
 }
 
 #frasefisio {
     color: #b9cebb;
-    width: 350px;
-    font-size: 28px;
-    margin-top: 6px;
+    width: 390px;
+    font-size: 34px;
+    margin-top: 15px;
     text-shadow: 2px 2px 2.5px rgb(97, 126, 93);
     font-weight: 300;
-    margin-left: 8px;
+    margin-left: 10px;
+    cursor: default;
 
 }
 
@@ -313,26 +360,88 @@ header {
 }
 
 #ref4 {
-    width: 310px;
-    height: 240px;
+    width: 410px;
+    height: 340px;
     border-radius: 18px;
-    border: 2.6px solid rgb(115, 151, 113)b3;
+    border: 1.8px solid rgb(115, 151, 113);
     box-shadow: 0px 0px 30px rgb(115, 151, 113);
 }
 
 #frasepilates {
     color: #b9cebb;
-    width: 390px;
-    font-size: 28px;
-    margin-top: 6px;
+    width: 430px;
+    font-size: 34px;
+    margin-top: 15px;
     text-shadow: 2px 2px 2.5px rgb(97, 126, 93);
     font-weight: 300;
-    margin-left: 8px;
+    margin-left: 10px;
+    cursor: default;
 
 }
 
-#ref4:hover, #ref5:hover , #btnagendar:hover , #fisio1:hover ,
- #fisio2:hover , #fisio3:hover , #btnanterior:hover , #btnproximo:hover{
+.box2 {
+    position: absolute;
+    margin-top: 189px;
+    box-sizing: content-box;
+    width: 520px;
+    height: 740px;
+    background-color: #1a1a1ab3;
+    right: 140px;
+    box-shadow: 0px 0px 30px rgb(115, 151, 113);
+    border-radius: 20px;
+}
+
+#h1box {
+    font-size: 22px;
+    justify-self: center;
+    align-self: center;
+    color: #e9ffe5;
+    text-shadow: 0px 0px 22.5px rgb(160, 160, 160);
+    cursor: default;
+}
+
+#pbox {
+    color: #c6ddc2;
+    justify-self: center;
+    align-self: center;
+    margin-top: 12px;
+    font-size: 14px;
+    cursor: default;
+    
+}
+
+#reflocal {
+    margin-top: 1px;
+    justify-self: center;
+    align-self: center;
+    width: 270px;
+    height: auto;
+    border-radius: 16px;
+}
+
+#p1box {
+    color: #738570;
+    justify-self: center;
+    align-self: center;
+    margin-top: 6px;
+    font-size: 12px;
+    text-shadow: 0px 0px 6.5px rgb(0, 0, 0);
+    cursor: default;
+}
+
+#horario {
+    justify-self: center;
+    align-self: center;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+#ref4:hover, #ref5:hover , #btnagendar:hover , #btnagendar2:hover , #fisio1:hover ,
+ #fisio2:hover , #fisio3:hover , #btnanterior:hover , #btnproximo:hover ,
+ .box2:hover , #reflocal:hover , #horario:hover , #logingoogle:hover , #logoutgoogle:hover{
     animation: passar 0.09s linear;
     transform: scale(1.1);
 }
@@ -383,6 +492,7 @@ header {
 #pfisio {
     color: rgb(245, 238, 238);
     text-shadow: 0px 0px 10px rgb(161, 202, 145);
+    cursor: default;
 }
 
 .funcionario1, .funcionario2, .funcionario3 {
@@ -396,6 +506,9 @@ header {
     flex-direction: column;
     height: 150px;
     background-color: #1d221cb3;
+    border-top: 0px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 16px rgb(115, 151, 113);
+
 }
 
 .aba5voltar{
@@ -406,6 +519,7 @@ header {
 #h3aba5 {
     color: #defad8;
     text-shadow: 0px 0px 25px rgb(12, 20, 11);
+    cursor: default;
 
     
 }
@@ -429,4 +543,30 @@ header {
 #instap {
     color: white;
     font-weight: 600;
+    cursor: default;
 }
+
+#btnagendar2 {
+    display: flex;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    background-color: #9de0a0;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 0px;
+    width: 248px;
+    height: 39px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #9de0a0;
+
+}
+

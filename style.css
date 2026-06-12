@@ -307,7 +307,7 @@ header {
     font-weight: 630;
     font-size: 50px;
     text-shadow: 0px 0px 10px rgb(142, 165, 131);
-    animation: deslizar 26s linear infinite;
+    animation: deslizar 32s linear infinite;
     cursor: default;
 }
 
@@ -318,7 +318,7 @@ header {
     }
 
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-45%);
     }
 }
 
@@ -604,23 +604,44 @@ header {
 
 
 #h1pag2 {
-    color: #ebfde6e6;
+    display: flex;
+    color: #ebfde680;
     font-weight: 630;
     font-size: 40px;
     text-shadow: 0px 0px 10px rgb(142, 165, 131);
-    animation: deslizar 26s linear infinite;
+    animation: deslizar1 35s linear infinite;
+    cursor: default;
+    margin-top: 16px;
+}
+
+#h1pag22 {
+    color: #ebfde669;
+    font-weight: 630;
+    font-size: 40px;
+    text-shadow: 0px 0px 10px rgb(142, 165, 131);
+    animation: deslizar2 35s linear infinite;
     cursor: default;
     margin-top: 16px;
 }
 
 
-@keyframes deslizar {
+@keyframes deslizar1 {
     100% {
         transform:translateX(100%)
     }
 
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-37%);
+    }
+}
+
+@keyframes deslizar2 {
+    0% {
+        transform:translateX(109%)
+    }
+
+    100% {
+        transform: translateX(-40%);
     }
 }
 
@@ -689,6 +710,10 @@ header {
     display: flex;
 }
 
+.opcoesagenda.fechado {
+    display: none;
+}
+
 .opcaoservico, .opcaodata, .opcaohorario {
     display: flex;
     flex-direction: column;
@@ -717,4 +742,17 @@ header {
     cursor: pointer;
     box-shadow: 0px 0px 23px #6a9b6d;
     margin-top: 23px;
+}
+
+#btnfechar {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#imgfechar {
+    width: 30px;
 }

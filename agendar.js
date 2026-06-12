@@ -59,56 +59,15 @@ onAuthStateChanged(auth, (user)=> {
     }
 })
 
-
-
-
-
-const trocaraba1 = document.getElementById("btntrocar1").addEventListener("click", () => {
-    const aba1 = document.getElementById("aba1");
-    const aba2 = document.getElementById("aba2");
-
-    if (aba2.style.display === "none") {
-        aba1.style.display = "none";
-        aba2.style.display = "flex";
-    } else {
-        aba1.style.display = "flex";
-        aba2.style.display = "none";
-    }
-
-    
-});
-
-const trocaraba2 = document.getElementById("btntrocar2").addEventListener("click", () => {
-    const aba1 = document.getElementById("aba1");
-    const aba2 = document.getElementById("aba2");
-
-    if (aba2.style.display === "none") {
-        aba1.style.display = "none";
-        aba2.style.display = "flex";
-    } else {
-        aba1.style.display = "flex";
-        aba2.style.display = "none";
-    }
-
-    
-});
-
-const btnvoltar = document.getElementById("btnagendar2").addEventListener("click", () => {
-    const aba1 = document.getElementById("aba1");
-    const aba2 = document.getElementById("aba2");
-    aba1.style.display = "none";
-    aba2.style.display = "flex";
-})
-
-const proximapag = document.getElementById("btnagendar").addEventListener("click" , async() => {
-    const user = auth.currentUser;
-    if (user) {
-        window.location.href = "agendar.html"
-    } else {
-        document.getElementById("logingoogle").click();
-    }
-
+document.getElementById("h1fisio2").addEventListener("click" , () =>{
+    window.location.href = "index.html"
 })
 
 
+const btnExpandir = document.getElementById("expandiragenda");
+const opcoesAgenda = document.querySelector(".opcoesagenda");
+
+btnExpandir.addEventListener("click", () => {
+    opcoesAgenda.classList.toggle("ativo");
+});
 

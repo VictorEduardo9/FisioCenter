@@ -303,7 +303,7 @@ header {
 }
 
 #tituloaba3 {
-    color: #ebfde6;
+    color: #ebfde6e6;
     font-weight: 630;
     font-size: 50px;
     text-shadow: 0px 0px 10px rgb(142, 165, 131);
@@ -570,3 +570,151 @@ header {
 
 }
 
+
+
+
+
+
+#header2 {
+   display: flex;
+   padding-left: 9px;
+   margin-top: 0;
+   height: 80px;
+   width: 100%;
+   background-color: #40533bb3;
+   font-family: "Inter Tight", sans-serif;
+   border-bottom: 1.4px solid rgb(115, 151, 113);
+   box-shadow: 0px 0px 35px rgb(115, 151, 113);
+}
+
+#h1fisio2 {
+    position: relative;
+    font-size: 56px;
+    margin-top: 5px;
+    font-weight: 420;
+    text-shadow: 2px 2px 4.5px #163b04;
+    color: #ebfde6;
+    left: 5px;
+    cursor: pointer;
+    
+    
+}
+
+
+
+
+#h1pag2 {
+    color: #ebfde6e6;
+    font-weight: 630;
+    font-size: 40px;
+    text-shadow: 0px 0px 10px rgb(142, 165, 131);
+    animation: deslizar 26s linear infinite;
+    cursor: default;
+    margin-top: 16px;
+}
+
+
+@keyframes deslizar {
+    100% {
+        transform:translateX(100%)
+    }
+
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+.escolheragenda {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    height: 160px;
+    background-color: #1d221cb3;
+    border-top: 1px solid #475f48;
+    border-bottom: 1px solid #475f48;
+    box-shadow: 0px 0px 46px #475f48;
+
+}
+
+
+#expandiragenda {
+    display: flex;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    background-color: #475f48;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 0px;
+    width: 298px;
+    height: 59px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 23px #6a9b6d;
+
+}
+
+.opcoesagenda {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    justify-self: center;
+    align-self: center;
+    background-color: #090a08b3;
+    border: 1px solid #475f48;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px #475f48;
+    z-index: 10;
+    width: 450px;
+    height: 250px;
+    color: white;
+
+}
+
+.opcoesagenda.ativo {
+    display: flex;
+}
+
+.opcaoservico, .opcaodata, .opcaohorario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#btnconfirmar {
+    display: flex;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    background-color: #475f48;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 0px;
+    width: 168px;
+    height: 39px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 23px #6a9b6d;
+    margin-top: 23px;
+}

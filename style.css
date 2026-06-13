@@ -1,12 +1,13 @@
 body {
-    background-color: rgb(34, 34, 36);
+    background-color: #222224;
     max-width: 100%;
     margin: 0;
     font-family: "Inter Tight", sans-serif;
     overflow-x: hidden;
-    
 
 }
+
+
 
 header {
    display: flex;
@@ -71,8 +72,7 @@ header {
 }
 
 #sairimg {
-    width: 160px;
-    
+    width: 90px;
     height: auto;
     
 }
@@ -463,6 +463,8 @@ header {
     border-bottom: 1.6px solid rgb(115, 151, 113);
     border-top: 0px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 25px rgb(115, 151, 113);
+    
+    
 }
 
 #equipe {
@@ -505,9 +507,14 @@ header {
     display: flex;
     flex-direction: column;
     height: 150px;
+    width: 100%;
     background-color: #1d221cb3;
-    border-top: 0px solid rgb(115, 151, 113);
-    box-shadow: 0px 2px 16px rgb(115, 151, 113);
+    border-top: 1px solid rgb(115, 151, 113);
+    box-shadow: 2px rgb(115, 151, 113);
+    bottom: 0px;
+    z-index: 100;
+    flex: 1;
+    
 
 }
 
@@ -525,9 +532,10 @@ header {
 }
 
 .instagram {
+    
     bottom: 0px;
-    left: 19px;
-    position: absolute;
+    left: 15px;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -597,68 +605,63 @@ header {
     left: 5px;
     cursor: pointer;
     
-    
 }
 
+.aba2agendar {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(BackgroundFundo.png);
+    
+    background-size: cover;
+}
 
 
 
 #h1pag2 {
-    display: flex;
-    color: #ebfde680;
+    color: #ffffff;
     font-weight: 630;
-    font-size: 40px;
-    text-shadow: 0px 0px 10px rgb(142, 165, 131);
-    animation: deslizar1 35s linear infinite;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(142, 165, 131, 0.699);
     cursor: default;
     margin-top: 16px;
+    z-index: 100;
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 400px;
+    margin-bottom: 0px;
+    
+
 }
 
-#h1pag22 {
-    color: #ebfde669;
+#ppag2 {
+    position: relative;
+    color: #ccd8c7;
     font-weight: 630;
-    font-size: 40px;
-    text-shadow: 0px 0px 10px rgb(142, 165, 131);
-    animation: deslizar2 35s linear infinite;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px rgba(142, 165, 131, 0.699);
     cursor: default;
-    margin-top: 16px;
+    width: 310px;
+    margin-top: 9px;
+    margin-left: 38px;
+    margin-bottom: 0px;
+    
+    
 }
 
-
-@keyframes deslizar1 {
-    100% {
-        transform:translateX(100%)
-    }
-
-    0% {
-        transform: translateX(-37%);
-    }
+.titulopag2 , .titulo2pag2 {
+    margin-left: 10px;
 }
 
-@keyframes deslizar2 {
-    0% {
-        transform:translateX(109%)
-    }
-
-    100% {
-        transform: translateX(-40%);
-    }
-}
 
 .escolheragenda {
     display: flex;
     position: relative;
-    justify-content: center;
-    align-content: center;
     justify-items: center;
     align-items: center;
-    max-width: 100%;
-    height: 160px;
-    background-color: #1d221cb3;
-    border-top: 1px solid #475f48;
-    border-bottom: 1px solid #475f48;
-    box-shadow: 0px 0px 46px #475f48;
-
+    margin-left: 43px;
+    
+    
 }
 
 
@@ -667,23 +670,41 @@ header {
     position: relative;
     justify-self: center;
     align-self: center;
-    background-color: #475f48;
+    background-color: #8caa86;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
     border: 0px;
-    width: 298px;
-    height: 59px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    width: 248px;
+    height: 52px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
     font-family: "Inter Tight", sans-serif;
     font-weight: 700;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 23px #6a9b6d;
+    margin-top: 25px;
+    margin-left: 5px;
 
+}
+
+.agendaimagem {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    align-self: flex-end;
+    right: 150px;
+    top: 89px;
+    z-index: 0;
+
+
+}
+
+#agendaimg {
+    width: 580px;
 }
 
 .opcoesagenda {
@@ -694,7 +715,7 @@ header {
     top: 70px;
     justify-self: center;
     align-self: center;
-    background-color: #090a08b3;
+    background-color: #090a087c;
     border: 1px solid #475f48;
     border-radius: 18px;
     padding: 15px;
@@ -755,4 +776,136 @@ header {
 
 #imgfechar {
     width: 30px;
+}
+
+
+.meusagendamentos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: #d9ffd0;
+    text-shadow: 2px 2px 1px rgb(97, 126, 93);
+    border-top: 2.4px solid rgba(115, 151, 113, 0.829);
+    box-shadow: 0px -17px 15px #475f4841;
+    padding-bottom: 212px;
+    
+    
+}
+
+.card-agendamento {
+    font-family: "Poppins", sans-serif;
+    text-shadow: 2px 2px 2px rgb(97, 126, 93);
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    background-color: #090a087c;
+    border: 3px solid #475f48;
+    border-radius: 18px;
+    padding: 15px;
+    max-width: 100%;
+    height: 75px;
+    color: white;
+    margin-bottom: 13px;
+    z-index: 100;
+    
+    
+
+    
+}
+
+.btncancelar {
+    position: absolute;
+    right: 20px;
+    top: 34px;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 330;
+    color: #6e0f0f;
+    text-shadow: 2px 2px 3px rgb(53, 13, 4);
+    height: 45px;
+    background-color: transparent;
+    border: 1.7px solid #6e0f0f;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#listaagendamentos {
+    column-gap: 15px;
+}
+
+
+.aba2pag2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 116px;
+    width: 100%;
+    background-color: #1d221cb3;
+    border-top: 1px solid rgb(115, 151, 113);
+    box-shadow: 2px rgb(115, 151, 113);
+    bottom: 0px;
+    z-index: 100;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+
+.aba2pag2voltar{
+    align-items: center;
+    justify-items: center;
+}
+
+#h3aba2pag2 {
+    color: #defad8;
+    text-shadow: 0px 0px 25px rgb(12, 20, 11);
+    cursor: default;
+
+    
+}
+
+.instagram2 {
+    margin-top: 10px;
+    bottom: 0px;
+    left: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#instalogo2 {
+    width: 15px;
+    margin-right: 2.1px;
+}
+
+#instap2 {
+    color: white;
+    font-weight: 600;
+    cursor: default;
+}
+
+#btnvoltar {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    margin-top: 20px;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+#voltarimg {
+    margin-top: 0;
+    width: 85px;
 }

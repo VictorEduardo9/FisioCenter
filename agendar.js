@@ -32,11 +32,10 @@ const spanUsuario = document.getElementById("usuario");
 
 
 
-const btnlogin = document.getElementById("logingoogle").addEventListener("click" , async() =>{
+const logingoogle = document.getElementById("logingoogle");
+logingoogle.addEventListener("click" , async() =>{
     try {
         const result = await signInWithPopup(auth, provider)
-        document.getElementById("usuario").textContent = 
-            result.user.displayName;
         console.log("Nome:", result.user.displayName);
         console.log("Email:", result.user.email);
     } catch (error) {
@@ -57,13 +56,17 @@ btnlogout.addEventListener("click" , async () => {
 
 onAuthStateChanged(auth, (user)=> {
     if (user) {
+        usuarioAtual = user;
         spanUsuario.textContent = user.displayName
         logingoogle.style.display = "none"
         btnlogout.style.display = "inline-block"
+        carregaragendamentos(); 
     } else {
+        usuarioAtual = null;
         spanUsuario.textContent = ""
         logingoogle.style.display = "inline-block"
         btnlogout.style.display = "none"
+         document.getElementById("listaagendamentos").innerHTML = "";
     }
 })
 
@@ -90,7 +93,7 @@ document.getElementById("btnconfirmar").addEventListener("click" , async() => {
     const servico = document.getElementById("servico").value;
     const data = document.getElementById("data").value;
     const horario = document.getElementById("horariosel").value;
-    const conf = document.getElementById("btnconfirmar");
+    const conf = document.getElementById("confirmacao");
 
     if (!servico || !data || !horario){
         conf.textContent = "Dados insuficientes - Preencha todos os campos. ⚠️"
@@ -100,7 +103,7 @@ document.getElementById("btnconfirmar").addEventListener("click" , async() => {
 
     try {
         const verificacao = query(
-            collection(db, "Agendamentos") ,
+            collection(db, "agendamentos") ,
             where("data" , "==" , data),
             where("horario" , "==" , horario)
         );
@@ -111,7 +114,7 @@ document.getElementById("btnconfirmar").addEventListener("click" , async() => {
             return;
         }
 
-        await addDoc(collection(db, "Agendamentos"), {
+        await addDoc(collection(db, "agendamentos"), {
             uid: usuarioAtual.uid,
             nome: usuarioAtual.displayName,
             email: usuarioAtual.email,
@@ -125,11 +128,50 @@ document.getElementById("btnconfirmar").addEventListener("click" , async() => {
 
     document.getElementById("servico").value=""
     document.getElementById("data").value=""
-    document.getElementById("selhorario").value=""
+    document.getElementById("horariosel").value=""
     carregaragendamentos();
     } catch (error) {
         conf.textContent = "❌ Erro ao agendar. Tente novamente.";
         console.error(error);
     }
 })
+
+async function carregaragendamentos() {
+    const lista = document.getElementById("listaagendamentos");
+    lista.innerHTML = "Carregando..."
+    try {
+        const q = query(
+            collection(db, "agendamentos"),
+            where("uid" , "==" , usuarioAtual.uid)
+        );
+        const snapshot = await getDocs(q)
+        if (snapshot.empty) {
+            lista.innerHTML = "<h6>Nenhum agendamento encontrado. </h6>";
+            return;
+        }
+        lista.innerHTML = "";
+        snapshot.forEach((documento => {
+            const d = documento.data();
+            const card = document.createElement("div");
+            card.className = "card-agendamento"
+            card.innerHTML = `
+            <p>📅 <strong>${d.data}</strong> ás <strong>${d.horario}</strong></p>
+            <button class="btncancelar" data-id="${documento.id}">Cancelar</button>
+            `;
+            lista.appendChild(card);
+        }));
+        document.querySelectorAll(".btncancelar").forEach((btn) => {
+            btn.addEventListener("click" , async () => {
+                await deleteDoc(doc(db , "agendamentos" , btn.dataset.id));
+                carregaragendamentos();
+            });
+        });
+
+    } catch (error) {
+        lista.innerHTML = "<p>Erro ao carregar agendamentos.</p>";
+        console.error(error);
+    }
+
+    }
+
 

@@ -18,6 +18,7 @@ header {
    background-color: #40533bb3;
    font-family: "Inter Tight", sans-serif;
    border-bottom: 4.4px solid rgb(115, 151, 113);
+   
 }
 
 #h1fisio {
@@ -28,7 +29,7 @@ header {
     text-shadow: 2px 2px 4.5px #163b04;
     color: #ebfde6;
     left: 5px;
-    cursor: default;
+    cursor: pointer;
      
 }
 
@@ -37,6 +38,7 @@ header {
     margin-left: 8px;
     width: 70px;
     height: 70px;
+    cursor: pointer;
 
 }
 
@@ -54,6 +56,7 @@ header {
     font-size: 16px;
     font-weight: 560;
     margin-bottom: 5px;
+    cursor: default;
 
 }
 
@@ -223,7 +226,7 @@ header {
     position: relative;
     justify-self: center;
     align-self: center;
-    background-color: #9de0a0;
+    background-color: #8caa86;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -453,7 +456,8 @@ header {
 
 #ref4:hover, #ref5:hover , #btnagendar:hover , #btnagendar2:hover , #fisio1:hover ,
  #fisio2:hover , #fisio3:hover , #btnanterior:hover , #btnproximo:hover ,
- .box2:hover , #reflocal:hover , #horario:hover , #logingoogle:hover , #logoutgoogle:hover{
+ .box2:hover , #reflocal:hover , #horario:hover , #logingoogle:hover , #logoutgoogle:hover ,
+ #expandiragenda:hover , #btnvoltar:hover , .btncancelar:hover{
     animation: passar 0.09s linear;
     transform: scale(1.1);
 }
@@ -571,7 +575,7 @@ header {
     position: relative;
     justify-self: center;
     align-self: center;
-    background-color: #9de0a0;
+    background-color: #8caa86;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -724,26 +728,32 @@ header {
 
 .opcoesagenda {
     display: none;
-    flex-direction: column;
-    gap: 10px;
+    gap: 60px;
     position: absolute;
-    top: 70px;
-    justify-self: center;
-    align-self: center;
-    background-color: #090a087c;
+    flex-wrap: wrap;
+    top: 120px;
+    background-color: #090a08dc;
     border: 1px solid #475f48;
     border-radius: 18px;
     padding: 15px;
     box-shadow: 0px 0px 20px #475f48;
-    z-index: 10;
-    width: 450px;
-    height: 250px;
-    color: white;
+    z-index: 100;
+    width: 55%;
+    height: auto;
+    min-height: 250px;
+    color: rgb(215, 240, 208);
+    transform: translateX(-0%);
+    justify-content: center;
+    
+    
+    
+    
 
 }
 
 .opcoesagenda.ativo {
     display: flex;
+    
 }
 
 .opcoesagenda.fechado {
@@ -753,18 +763,42 @@ header {
 .opcaoservico, .opcaodata, .opcaohorario {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    text-align: center;
+    justify-self: center;
+    align-content: center;
+    font-size: 25px; 
+    margin-left: 50px;
+
+}
+
+.opcaoservico select, .opcaohorario select {
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    border-radius: 7px;
+    background-color: #0000008f;
+    color: #ffffff9f;
+    border: 1px solid;
+
+
+}
+
+.opcaodata input {
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    border-radius: 7px;
+    background-color: #0000008f;
+    color: #ffffff9f;
+    border: 0.5px solid;
 }
 
 #btnconfirmar {
     display: flex;
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    background-color: #475f48;
+    order: 1;
+    background-color: #8caa86;
     justify-content: center;
-    align-content: center;
-    justify-items: center;
     align-items: center;
     border: 0px;
     width: 168px;
@@ -777,7 +811,21 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 23px #6a9b6d;
-    margin-top: 23px;
+    
+    
+
+}
+
+.botaoagendar {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    margin-bottom: 10px;
+
 }
 
 #btnfechar {
@@ -793,6 +841,17 @@ header {
     width: 30px;
 }
 
+#confirmacao {
+    width: 600;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    text-align: center;
+    
+}
 
 .meusagendamentos {
     display: flex;
@@ -822,6 +881,7 @@ header {
     height: 75px;
     color: white;
     margin-bottom: 13px;
+    cursor: default;
     
     
     
@@ -831,18 +891,28 @@ header {
 
 .btncancelar {
     position: absolute;
+    display: flex;
     right: 20px;
     top: 26px;
     font-family: "Poppins", sans-serif;
     font-size: 19px;
     font-weight: 330;
-    color: #6e0f0f;
+    color: #7a1111;
     text-shadow: 2px 2px 3px rgb(53, 13, 4);
     height: 45px;
     background-color: transparent;
-    border: 1.7px solid #6e0f0f;
+    border: 1.7px solid #7a1111;
     border-radius: 12px;
     cursor: pointer;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#imglixeira {
+    margin-right: 5px;
+    width: 20px;
+    height: 23px;
 }
 
 #listaagendamentos {
@@ -921,18 +991,38 @@ header {
 }
 
 #h3agenda {
-    margin-left: 25px;
+    margin-left: 69px;
     font-family: "Poppins", sans-serif;
     font-size: 25px;
     color: #d9ffd0;
+    cursor: default;
 }
 
 #calendario {
     position: absolute;
     width: 25px;
-    margin-bottom: 3px;
+    margin-bottom: 3.3px;
 }
 
 .card-agendamento p {
     margin-left: 36px;
+}
+
+#calendarioagenda {
+    position: absolute;
+    width: 40px;
+    top: 19px;
+    margin-left: 22px;
+}
+
+h6 {
+    color: #adbba4a8;
+    font-family: "Poppins", sans-serif;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-size: 15px;
+    text-shadow: 0px 0px 15px #465349;
+    cursor: default;
+    
+    
 }

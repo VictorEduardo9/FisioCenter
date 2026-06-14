@@ -11,6 +11,14 @@ import { getFirestore, collection, addDoc, query,
          where, getDocs, deleteDoc, doc, Timestamp } 
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+const inputData = document.getElementById("data");
+const hoje = new Date();
+const ano = hoje.getFullYear();
+const mes = String(hoje.getMonth() + 1).padStart(2, "0");
+const dia = String(hoje.getDate()).padStart(2, "0");
+const dataHoje = `${ano}-${mes}-${dia}`;
+inputData.setAttribute("min", dataHoje);
+
 const firebaseConfig = {
   apiKey: "AIzaSyCe2CQPQQ2NUmEnqE9f8TuVlEXU3hx8ydg",
   authDomain: "fisiocenter1.firebaseapp.com",
@@ -75,6 +83,14 @@ document.getElementById("h1fisio2").addEventListener("click" , () =>{
 })
 
 
+function formatarData(dataISO) {
+    const [ano, mes, dia] = dataISO.split("-");
+    return `${dia}/${mes}/${ano}`;
+}
+
+
+
+
 const btnExpandir = document.getElementById("expandiragenda");
 const opcoesAgenda = document.querySelector(".opcoesagenda");
 const btnFechar = document.getElementById("btnfechar");
@@ -101,6 +117,17 @@ document.getElementById("btnconfirmar").addEventListener("click" , async() => {
         return;
     }
 
+    const dataSelecionada = new Date(data + "T00:00:00");
+    const dataAtual = new Date();
+    dataAtual.setHours(0, 0, 0, 0);
+
+    if (dataSelecionada < dataAtual) {
+        conf.textContent = "Data inválida - Escolha uma data futura. ⚠️";
+        conf.style.color = "#f0db80";
+        return;
+    }
+
+
     try {
         const verificacao = query(
             collection(db, "agendamentos") ,
@@ -123,7 +150,7 @@ document.getElementById("btnconfirmar").addEventListener("click" , async() => {
             horario,
             criado_em: Timestamp.now()
         });
-    conf.innerHTML = `${servico}, ${data} ás ${horario} <br> Agendado com sucesso! ✅`
+    conf.innerHTML = `${servico}, ${formatarData(data)} ás ${horario} <br> Agendado com sucesso! ✅`
     conf.style.color = "#d8f7db";
 
     document.getElementById("servico").value=""
@@ -155,8 +182,8 @@ async function carregaragendamentos() {
             const card = document.createElement("div");
             card.className = "card-agendamento"
             card.innerHTML = `
-            <img id="calendario" src="Calendario.png"><p><strong>${d.data}</strong> às <strong>${d.horario}</strong></p>
-            <button class="btncancelar" data-id="${documento.id}">Cancelar</button>
+            <img id="calendario" src="Calendario.png"><p><strong>${formatarData(d.data)}</strong> às <strong>${d.horario}</strong></p>
+            <button class="btncancelar" data-id="${documento.id}"><img id="imglixeira" src="Lixeira.png">Cancelar</button>
             `;
             lista.appendChild(card);
         }));
@@ -177,5 +204,6 @@ async function carregaragendamentos() {
 document.getElementById("btnvoltar").addEventListener("click", () => {
     window.location.href = "index.html"
     })
+
 
 

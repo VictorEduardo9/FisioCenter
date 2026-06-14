@@ -155,7 +155,7 @@ async function carregaragendamentos() {
             const card = document.createElement("div");
             card.className = "card-agendamento"
             card.innerHTML = `
-            <p>📅 <strong>${d.data}</strong> ás <strong>${d.horario}</strong></p>
+            <img id="calendario" src="Calendario.png"><p><strong>${d.data}</strong> às <strong>${d.horario}</strong></p>
             <button class="btncancelar" data-id="${documento.id}">Cancelar</button>
             `;
             lista.appendChild(card);
@@ -173,5 +173,9 @@ async function carregaragendamentos() {
     }
 
     }
+
+document.getElementById("btnvoltar").addEventListener("click", () => {
+    window.location.href = "index.html"
+    })
 
 

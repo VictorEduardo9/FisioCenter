@@ -29,8 +29,15 @@ header {
     color: #ebfde6;
     left: 5px;
     cursor: default;
-    
-    
+     
+}
+
+#logo {
+    margin-top: 4.5px;
+    margin-left: 8px;
+    width: 70px;
+    height: 70px;
+
 }
 
 .arealogin {
@@ -285,6 +292,7 @@ header {
 }
 
 .aba3 {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 990px;
@@ -330,6 +338,7 @@ header {
     margin-left: 40px;
     display: flex;
     gap: 20px;
+   
 }
 
 #ref5 {
@@ -343,6 +352,7 @@ header {
 #frasefisio {
     color: #b9cebb;
     width: 390px;
+    max-width: 390px; 
     font-size: 34px;
     margin-top: 15px;
     text-shadow: 2px 2px 2.5px rgb(97, 126, 93);
@@ -357,6 +367,7 @@ header {
     margin-left: 40px;
     display: flex;
     gap: 20px;
+    
 }
 
 #ref4 {
@@ -370,6 +381,7 @@ header {
 #frasepilates {
     color: #b9cebb;
     width: 430px;
+    
     font-size: 34px;
     margin-top: 15px;
     text-shadow: 2px 2px 2.5px rgb(97, 126, 93);
@@ -696,9 +708,12 @@ header {
     flex-direction: row;
     justify-self: flex-end;
     align-self: flex-end;
-    right: 150px;
+    right: 255px;
     top: 89px;
     z-index: 0;
+    background-color: #00000046;
+    box-shadow: 0px 0px 65px #0000009f;
+    border-radius: 60px;
 
 
 }
@@ -783,36 +798,31 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    color: #d9ffd0;
-    text-shadow: 2px 2px 1px rgb(97, 126, 93);
     border-top: 2.4px solid rgba(115, 151, 113, 0.829);
     box-shadow: 0px -17px 15px #475f4841;
     padding-bottom: 212px;
-    
     
 }
 
 .card-agendamento {
     font-family: "Poppins", sans-serif;
-    text-shadow: 2px 2px 2px rgb(97, 126, 93);
     justify-items: center;
     align-items: center;
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
-    background-color: #090a087c;
-    border: 3px solid #475f48;
+    flex-direction: row;
+    background-color: #090a0848;
+    border: 1px solid #475f48;
+    box-shadow: 0px 0px 35px #475f4841;
     border-radius: 18px;
-    padding: 15px;
+    padding: 10px;
     max-width: 100%;
     height: 75px;
     color: white;
     margin-bottom: 13px;
-    z-index: 100;
+    
     
     
 
@@ -822,7 +832,7 @@ header {
 .btncancelar {
     position: absolute;
     right: 20px;
-    top: 34px;
+    top: 26px;
     font-family: "Poppins", sans-serif;
     font-size: 19px;
     font-weight: 330;
@@ -841,7 +851,7 @@ header {
 
 
 .aba2pag2 {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     height: 116px;
@@ -908,4 +918,21 @@ header {
 #voltarimg {
     margin-top: 0;
     width: 85px;
+}
+
+#h3agenda {
+    margin-left: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: #d9ffd0;
+}
+
+#calendario {
+    position: absolute;
+    width: 25px;
+    margin-bottom: 3px;
+}
+
+.card-agendamento p {
+    margin-left: 36px;
 }

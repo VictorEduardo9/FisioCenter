@@ -7,8 +7,10 @@
     <title>Agendamentos - FisioCenter</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Birthstone&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -28,7 +30,8 @@
                 <h1 id="h1pag2">Menos espera, mais cuidado.</h1>
             </div>
             <div class="titulo2pag2">
-                <p id="ppag2">Agende seu atendimento de forma rápida, prática e segura. Seu bem-estar é nossa prioridade</p>
+                <p id="ppag2">Agende seu atendimento de forma rápida, prática e segura. Seu bem-estar é nossa prioridade
+                </p>
             </div>
 
             <div class="agendaimagem">
@@ -36,57 +39,65 @@
             </div>
 
             <div class="escolheragenda">
-            <button id="expandiragenda">Realizar Agendamento</button>
-            <div class="opcoesagenda">
-                <div class="opcaoservico">
-                    <label id="labelserv">Serviços</label>
-                    <select id="servico">
-                        <label>Serviços</label>
-                        <option id="selecione" value="">Selecione...</option>
-                        <option value="Avaliação Diagnóstica">Avaliação Diagnóstica</option>
-                        <option value="Pilates Terapêutico">Pilates Terapêutico</option>
-                        <option value="Reabilitação Pós-Cirúrgica">Reabilitação Pós-Cirúrgica</option>
-                        <option value="Fisioterapia Geriátrica">Fisioterapia Geriátrica</option>
-                        <option value="Fisioterapia Pediátrica">Fisioterapia Pediátrica</option>
-                        <option value="Fisioterapia Ortopédica">Fisioterapia Ortopédica</option>
-                    </select>
-                </div>
+                <button id="expandiragenda">Realizar Agendamento</button>
+                <div class="opcoesagenda">
+                    <div class="fraseagenda">
+                        <img id="relogio" src="Relogio.png" alt="">
+                        <h2 id="h2pag2">Agendar novo horário</h2>
+                        <p id="agendap">Escolha o serviço, data e horário.</p>
+                    </div>
+                    <div class="opcoes">
+                        <div class="opcaoservico">
+                            <label id="labelserv">Serviços</label>
+                            <select id="servico">
+                                <label>Serviços</label>
+                                <option id="selecione" value="">Selecione...</option>
+                                <option value="Avaliação Diagnóstica">Avaliação Diagnóstica</option>
+                                <option value="Pilates Terapêutico">Pilates Terapêutico</option>
+                                <option value="Reabilitação Pós-Cirúrgica">Reabilitação Pós-Cirúrgica</option>
+                                <option value="Fisioterapia Geriátrica">Fisioterapia Geriátrica</option>
+                                <option value="Fisioterapia Pediátrica">Fisioterapia Pediátrica</option>
+                                <option value="Fisioterapia Ortopédica">Fisioterapia Ortopédica</option>
+                            </select>
+                        </div>
 
-                <div class="opcaodata">
-                    <label id="labeldata">Data</label>
-                    <input type="date" id="data">
-                </div>
+                        <div class="opcaodata">
+                            <label id="labeldata">Data</label>
+                            <input type="date" id="data">
+                        </div>
 
-                <div class="opcaohorario">
-                    <label id="labelhorario">Horário</label>
-                    <select id="horariosel">
-                        <option id="selecione" value="">Selecione...</option>
-                        <option value="07:00">7:00</option>
-                        <option value="08:00">08:00</option>
-                        <option value="09:00">09:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                    </select>
-                </div>
-                <div class="botaoagendar">
-                    <button id="btnconfirmar">Agendar Horário</button>
-                </div>
-                <div>
-                    <button id="btnfechar"><img id="imgfechar" src="Fechar.png" alt=""></button>
-                </div>
+                        <div class="opcaohorario">
+                            <label id="labelhorario">Horário</label>
+                            <select id="horariosel">
+                                <option id="selecione" value="">Selecione...</option>
+                                <option value="07:00">7:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="botaoagendar">
+                        <button id="btnconfirmar">Agendar Horário</button>
+                    </div>
+                    <div>
+                        <button id="btnfechar"><img id="imgfechar" src="Fechar.png" alt=""></button>
+                    </div>
                     <div id="confirmacao"></div>
+
+                </div>
             </div>
         </div>
-        </div>
-        
-        
+
+
         <div class="meusagendamentos">
             <img id="calendarioagenda" src="Calendario.png" alt="">
             <h3 id="h3agenda">Meus Agendamentos</h3>
@@ -102,10 +113,10 @@
             <img id="instalogo2" src="Instagram Logo.png" alt="">
             <p id="instap2">usuarioexemplo_2026</p>
         </div>
-    
+
     </div>
 
-    
+
 </body>
 <script type="module" src="agendar.js"></script>
 

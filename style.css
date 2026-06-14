@@ -175,14 +175,6 @@ header {
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
 }
 
-.box2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    background-color: #000000b3;
-    height: 350px;
-    box-shadow: 0px 0px 20px #000;
-}
 
 
 .frases2a {
@@ -341,6 +333,9 @@ header {
     margin-left: 40px;
     display: flex;
     gap: 20px;
+    border-bottom: 2px solid #8caa868c;
+    padding-bottom: 20px;
+    max-width: max-content;
    
 }
 
@@ -349,24 +344,25 @@ header {
     height: 340px;
     border-radius: 18px;
     border: 1.8px solid rgb(115, 151, 113);
-    box-shadow: 0px 0px 30px rgb(115, 151, 113);
+    box-shadow: 0px 0px 13px rgba(115, 151, 113, 0.89);
 }
 
 #frasefisio {
-    color: #b9cebb;
-    width: 390px;
-    max-width: 390px; 
+    color: #ddeedf;
+    width: 490px;
+    max-width: 490px; 
     font-size: 34px;
     margin-top: 15px;
-    text-shadow: 2px 2px 2.5px rgb(97, 126, 93);
     font-weight: 300;
     margin-left: 10px;
     cursor: default;
+    font-family: "Poppins";
+    text-shadow: 0px 0px 35px #010a00be;
 
 }
 
 .pilates {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 40px;
     display: flex;
     gap: 20px;
@@ -378,31 +374,43 @@ header {
     height: 340px;
     border-radius: 18px;
     border: 1.8px solid rgb(115, 151, 113);
-    box-shadow: 0px 0px 30px rgb(115, 151, 113);
+    box-shadow: 0px 0px 13px rgba(115, 151, 113, 0.89);
 }
 
 #frasepilates {
-    color: #b9cebb;
-    width: 430px;
-    
+    color: #ddeedf;
+    width: 550px;
+    max-width: 550px; 
     font-size: 34px;
     margin-top: 15px;
-    text-shadow: 2px 2px 2.5px rgb(97, 126, 93);
     font-weight: 300;
     margin-left: 10px;
     cursor: default;
+    font-family: "Poppins";
+    text-shadow: 0px 0px 35px #010a00be;
 
+}
+
+#icone1img , #icone2img {
+    width: 60px;
+    height: 60px;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
 }
 
 .box2 {
     position: absolute;
-    margin-top: 189px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 194px;
     box-sizing: content-box;
     width: 520px;
     height: 740px;
-    background-color: #1a1a1ab3;
+    background-color: #00000023;
     right: 140px;
-    box-shadow: 0px 0px 30px rgb(115, 151, 113);
+    box-shadow: 0px 0px 30px #00000054;
+    border: 1.5px solid #00000023;
     border-radius: 20px;
 }
 
@@ -457,7 +465,8 @@ header {
 #ref4:hover, #ref5:hover , #btnagendar:hover , #btnagendar2:hover , #fisio1:hover ,
  #fisio2:hover , #fisio3:hover , #btnanterior:hover , #btnproximo:hover ,
  .box2:hover , #reflocal:hover , #horario:hover , #logingoogle:hover , #logoutgoogle:hover ,
- #expandiragenda:hover , #btnvoltar:hover , .btncancelar:hover{
+ #expandiragenda:hover , #btnvoltar:hover , .btncancelar:hover , #btnconfirmar:hover,
+ #servico:hover , #data:hover , #horariosel:hover{
     animation: passar 0.09s linear;
     transform: scale(1.1);
 }
@@ -474,24 +483,51 @@ header {
 }
 
 .aba4 {
+    position: relative;
     padding-top: 17px;
     height: 528px;
     border-bottom: 1.6px solid rgb(115, 151, 113);
-    border-top: 0px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 25px rgb(115, 151, 113);
+    background-color: #0000001a;
     
     
 }
 
 #equipe {
-    color: #ebfde6;
-    text-shadow: 2px 2px 4px rgb(159, 179, 156);
-    top: 58px;
-    margin-left: 37px;
-    margin-top: 30px;
-    font-size: 34px;
+    color: #eaffe7;
+    font-weight: 630;
+    font-size: 40px;
     cursor: default;
-    margin-bottom: 50px;
+    margin-top: 16px;
+    z-index: 100;
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 800px;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 25px #010a00be;
+    
+    
+}
+
+.equipediv {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#aba4p {
+    position: absolute;
+    display: flex;
+    margin-left: 70px;
+    top: 40px;
+    color: #ccd8c7ad;
+    font-weight: 630;
+    font-size: 20px;
+    text-shadow: 0px 0px 25px #010a00be;
+    cursor: default;
+    width: 510px;
+    
+
+    
 }
 
 .funcionarios {
@@ -628,8 +664,8 @@ header {
     display: flex;
     flex-direction: column;
     background-image: url(BackgroundFundo.png);
-    
     background-size: cover;
+    
 }
 
 
@@ -727,49 +763,63 @@ header {
 }
 
 .opcoesagenda {
-    display: none;
+    display: flex;
     gap: 60px;
     position: absolute;
     flex-wrap: wrap;
     top: 120px;
-    background-color: #090a08dc;
+    background-color: #090a08e5;
     border: 1px solid #475f48;
     border-radius: 18px;
     padding: 15px;
     box-shadow: 0px 0px 20px #475f48;
-    z-index: 100;
-    width: 55%;
+    width: 85%;
     height: auto;
-    min-height: 250px;
+    min-height: 265px;
     color: rgb(215, 240, 208);
-    transform: translateX(-0%);
-    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-25px) scale(1.16);
+    transition: all 0.4s cubic-bezier(.22,1,.36,1);
     
-    
-    
-    
+
 
 }
 
 .opcoesagenda.ativo {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
     
 }
 
-.opcoesagenda.fechado {
-    display: none;
-}
+
 
 .opcaoservico, .opcaodata, .opcaohorario {
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 10px;
-    text-align: center;
     justify-self: center;
+    align-self: center;
+    justify-content: center;
     align-content: center;
+    justify-items: center;
     font-size: 25px; 
-    margin-left: 50px;
+   
+      
+}
 
+.opcoes {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    border-bottom: 2px solid #8caa868c;
+    border-top: 2px solid #8caa868c;
+    width: 100%;
+    margin-top: 80px;
+    
 }
 
 .opcaoservico select, .opcaohorario select {
@@ -794,6 +844,9 @@ header {
     border: 0.5px solid;
 }
 
+
+
+
 #btnconfirmar {
     display: flex;
     order: 1;
@@ -811,21 +864,16 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 23px #6a9b6d;
-    
-    
 
 }
 
 .botaoagendar {
     width: auto;
     display: flex;
-    justify-content: center;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 50px;
-    margin-bottom: 10px;
-
+    right: 29px;
+    bottom: 30px;
+    
 }
 
 #btnfechar {
@@ -851,6 +899,45 @@ header {
     bottom: 15px;
     text-align: center;
     
+}
+
+#h2pag2 {
+    position: relative;
+    color: #ffffff;
+    font-weight: 630;
+    font-size: 22px;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    cursor: default;
+    margin-left: 5px;
+    bottom: 5px;
+    
+}
+
+#agendap {
+    position: absolute;
+    color: #ccd8c7;
+    font-weight: 430;
+    font-size: 14px;
+    cursor: default;
+    width: 310px;
+    top: 23px;
+    margin-left: 73.5px;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    
+    
+
+}
+
+#relogio {
+    width: 63px;
+    height: 63px;
+}
+
+.fraseagenda {
+    position: absolute;
+    display: flex;
+    
+    gap: 5px;
 }
 
 .meusagendamentos {
@@ -882,11 +969,21 @@ header {
     color: white;
     margin-bottom: 13px;
     cursor: default;
-    
-    
-    
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.95s cubic-bezier(.22,1,.36,1);
 
     
+}
+
+.card-agendamento.removendo {
+    opacity: 0;
+    transform: scale(0.85);
+}
+
+.card-agendamento.novo {
+    opacity: 0;
+    transform: translateY(35px) scale(0.85);
 }
 
 .btncancelar {
@@ -906,6 +1003,7 @@ header {
     cursor: pointer;
     justify-items: center;
     align-items: center;
+    
     
 }
 
@@ -1016,6 +1114,7 @@ header {
 }
 
 h6 {
+    display: flex;
     color: #adbba4a8;
     font-family: "Poppins", sans-serif;
     margin-left: 30px;

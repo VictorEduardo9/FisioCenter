@@ -180,17 +180,25 @@ async function carregaragendamentos() {
         snapshot.forEach((documento => {
             const d = documento.data();
             const card = document.createElement("div");
-            card.className = "card-agendamento"
+            card.className = "card-agendamento novo"
             card.innerHTML = `
             <img id="calendario" src="Calendario.png"><p><strong>${formatarData(d.data)}</strong> às <strong>${d.horario}</strong></p>
             <button class="btncancelar" data-id="${documento.id}"><img id="imglixeira" src="Lixeira.png">Cancelar</button>
             `;
             lista.appendChild(card);
+            setTimeout(()=> {
+                card.classList.remove("novo");
+            },10);
         }));
         document.querySelectorAll(".btncancelar").forEach((btn) => {
             btn.addEventListener("click" , async () => {
+                const card = btn.closest(".card-agendamento");
+                card.classList.add("removendo");
+
+                setTimeout(async()=>{
                 await deleteDoc(doc(db , "agendamentos" , btn.dataset.id));
                 carregaragendamentos();
+            });
             });
         });
 
@@ -200,6 +208,7 @@ async function carregaragendamentos() {
     }
 
     }
+
 
 document.getElementById("btnvoltar").addEventListener("click", () => {
     window.location.href = "index.html"

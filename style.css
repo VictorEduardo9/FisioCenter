@@ -7687,6 +7687,7 @@ header {
     border-top: 2.4px solid rgba(115, 151, 113, 0.829);
     box-shadow: 0px -17px 15px #475f4841;
     padding-bottom: 212px;
+    overflow-y: scroll;
     
 }
 
@@ -7822,17 +7823,17 @@ header {
 
 #btnvoltar {
     background-color: transparent;
-    border: 0;
-    display: flex;
     margin-top: 20px;
     position: absolute;
     justify-self: center;
     align-self: center;
+    display: flex;
     border: 0px;
     cursor: pointer;
     z-index: 999;
-    transform: none;
-    left: auto;
+    transform: translateX(-50%);
+    left: 50%;
+
     
 }
 
@@ -7878,6 +7879,11 @@ h6 {
     cursor: default;
     
     
+}
+
+
+#body2 {
+    overflow-y: hidden;
 }
 
 }

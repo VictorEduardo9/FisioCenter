@@ -7298,9 +7298,6 @@ header {
     background-color: #1d221cb3;
     border-top: 1px solid rgb(115, 151, 113);
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
     height: auto;
     padding: 10px 0;
     gap: 6px;
@@ -7324,8 +7321,8 @@ header {
     cursor: default;
     font-size: 16px;
     margin-top: 0;
-    transform: translateX(-50px);
-    left: 50%;
+    transform: translateX(-100px);
+    left: 100%;
     
 }
 

@@ -7764,6 +7764,7 @@ header {
     flex-direction: column;
     height: 95px;
     width: 100%;
+    max-width: 100%;
     background-color: #1d221cb3;
     border-top: 1px solid rgb(115, 151, 113);
     box-shadow: 2px rgb(115, 151, 113);
@@ -7773,6 +7774,8 @@ header {
     padding-bottom: 0px;
     height: auto;
     padding: 0 0;
+    justify-content: center;
+    
 
 }
 
@@ -7787,12 +7790,12 @@ header {
     cursor: default;
     margin-top: 14px;
     font-size: 16px;
-
+    transform: translateX(-50%);
+    left: 50%;
     
 }
 
 .instagram2 {
-
     bottom: 2px;
     left: 15px;
     position: relative;

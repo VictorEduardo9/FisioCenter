@@ -7785,6 +7785,8 @@ header {
 }
 
 #h3aba2pag2 {
+    position: relative;
+    display: flex;
     color: #defad8;
     text-shadow: 0px 0px 25px rgb(12, 20, 11);
     cursor: default;
@@ -7792,6 +7794,7 @@ header {
     font-size: 16px;
     transform: translateX(-50%);
     left: 50%;
+    
     
 }
 

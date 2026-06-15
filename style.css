@@ -6716,7 +6716,7 @@ h6 {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 528px) {
 body {
     background-color: #222224;
     max-width: 100%;
@@ -7311,6 +7311,8 @@ header {
 .aba5voltar{
     align-items: center;
     justify-items: center;
+    transform: translateX(-50px);
+    left: 50%;
     
 }
 

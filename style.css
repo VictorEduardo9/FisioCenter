@@ -7823,16 +7823,15 @@ header {
 
 #btnvoltar {
     background-color: transparent;
+    margin: 0;
     margin-top: 20px;
-    position: absolute;
-    justify-self: center;
-    align-self: center;
     display: flex;
     border: 0px;
     cursor: pointer;
     z-index: 999;
     transform: translateX(-50%);
     left: 50%;
+    
 
     
 }
@@ -7882,8 +7881,8 @@ h6 {
 }
 
 
-#body2 {
-    overflow-y: hidden;
+.body2 {
+    overflow: hidden;
 }
 
 }

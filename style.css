@@ -7785,7 +7785,6 @@ header {
 }
 
 #h3aba2pag2 {
-    text-align: center;
     justify-self: center;
     align-self: center;
     position: relative;
@@ -7796,7 +7795,7 @@ header {
     margin-top: 14px;
     font-size: 16px;
     transform: translateX(-50%);
-    left: 50%;
+    margin: 0;
     
     
 }
@@ -7849,6 +7848,7 @@ header {
     font-size: 25px;
     color: #d9ffd0;
     cursor: default;
+    
 }
 
 #calendario {

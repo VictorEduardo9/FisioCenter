@@ -7373,6 +7373,9 @@ header {
     box-shadow: 0px 0px 15px #9de0a0;
     z-index: 99999999;
     margin-bottom: 17px;
+    transform: translateX(-50%);
+    left: 50%;
+    margin: 0;
     
     
     

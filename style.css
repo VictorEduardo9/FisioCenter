@@ -7311,18 +7311,19 @@ header {
 .aba5voltar{
     align-items: center;
     justify-items: center;
-    transform: translateX(50px);
-    right: 50%;
+    
     
 }
 
 #h3aba5 {
+    text-align: center;
     color: #defad8;
     text-shadow: 0px 0px 25px rgb(12, 20, 11);
     cursor: default;
     font-size: 16px;
     margin-top: 0;
-
+    transform: translateX(50px);
+    right: 50%;
     
 }
 

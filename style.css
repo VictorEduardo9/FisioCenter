@@ -115,6 +115,8 @@ header {
     background-color: #000000b3;
     height: 350px;
     box-shadow: 0px 0px 20px #000;
+    
+    
 
 }
 
@@ -129,6 +131,7 @@ header {
     text-shadow: 2px 2px 1px rgb(97, 126, 93);
     top: 58px;
     
+    
 }
 
 #h2t1 {
@@ -136,6 +139,7 @@ header {
     justify-self: center;
     align-self: center;
     cursor: default;
+    
     
 }
 
@@ -151,20 +155,12 @@ header {
     left: 39px;
     cursor: default;
     
+    
 
     
 }
 
-#img1 {
-    
-    width: 500px;
-    top: 09px;
-    height: auto;
-    border-radius: 30px;
-    justify-self: flex-end;    
-    align-self: flex-end;
-    margin-right: 28px;
-}
+
 
 
 
@@ -1300,6 +1296,7 @@ header {
     max-width: 100%;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
+    
 }
 
 
@@ -1338,6 +1335,10 @@ header {
     cursor: default;
 
     
+}
+
+.frase2 {
+    margin-top: 20px;
 }
 
 #btnagendar {
@@ -6816,6 +6817,8 @@ header {
     max-width: 100%;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
+    align-items: center;
+    
 }
 
 .box1 {
@@ -6827,6 +6830,7 @@ header {
     height: 180px;
     box-shadow: 0px 0px 20px #000;
     justify-self: center;
+    width: 100%;
     
 
 }
@@ -6847,10 +6851,9 @@ header {
 }
 
 #h2t1 {
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    cursor: default;
+    transform: translateX(-60%);
+    left: 54.5%;
+    font-size: 19px;
     
 }
 
@@ -6866,10 +6869,9 @@ header {
     justify-self: center;
     align-self: center;
     cursor: default;
-    margin-right: 31px;
-
-    
-    
+    transform: translateX(-60%);
+    left: 54.5%;
+ 
 
     
 }
@@ -6886,7 +6888,13 @@ header {
 }
 
 
-
+#h2t1, #pt1, #h2t2, #pt2 {
+    text-align: center;
+    width: 90%;
+    max-width: 380px;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 
@@ -6901,6 +6909,7 @@ header {
     max-width: 100%;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
+    align-items: center;
 }
 
 
@@ -6919,10 +6928,9 @@ header {
 }
 
 #h2t2 {
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    cursor: default;
+    transform: translateX(-60%);
+    left: 54.5%;
+    font-size: 15px;
     
 }
 
@@ -6938,7 +6946,8 @@ header {
     justify-self: center;
     align-self: center;
     cursor: default;
-    margin-left: 31px;
+    transform: translateX(-50%);
+    left: 50%;
     
 
     
@@ -7063,7 +7072,7 @@ header {
     margin-top: 1px;
     margin-left: 10px;
     display: flex;
-    gap: 20px;
+    gap: 7px;
     border-bottom: 2px solid #8caa868c;
     padding-bottom: 30px;
     max-width: max-content;
@@ -7095,7 +7104,7 @@ header {
     margin-top: 12px;
     margin-left: 10px;
     display: flex;
-    gap: 20px;
+    gap: 7px;
     border-bottom: 2px solid #8caa868c;
     padding-bottom: 30px;
     max-width: max-content;
@@ -7113,7 +7122,7 @@ header {
 #frasepilates {
     color: #ddeedf;
     width: 200px;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 10px;
     font-weight: 300;
     margin-left: 10px;
@@ -7142,7 +7151,9 @@ header {
     border-radius: 20px;
     margin-right: 10px;
     margin-top: 510px;
-    align-items: center
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
     
 }
 
@@ -7221,6 +7232,7 @@ header {
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 25px rgb(115, 151, 113);
     background-color: #0000001a;
+    align-items: center;
     
     
 }
@@ -7266,6 +7278,7 @@ header {
     display: flex;
     justify-self: center;
     gap: 20px;
+    justify-content: center;
     
 }
 
@@ -7297,6 +7310,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+    align-content: center;
     height: auto;
     padding: 10px 0;
     gap: 6px;
@@ -7326,11 +7340,14 @@ header {
     position: absolute;
     display: flex;
     margin: 0;
+    left: 5px;
+    bottom: 0px;
 
 }
 
 #instalogo {
     width: 10px;
+    height: 10px;
     margin-right: 2.1px;
 }
 
@@ -7352,7 +7369,7 @@ header {
     justify-items: center;
     align-items: center;
     border: 0px;
-    width: 155px;
+    width: 145px;
     height: 25px;
     font-size: 11px;
     color: rgb(255, 255, 255);
@@ -7363,7 +7380,7 @@ header {
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
     z-index: 99999999;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     
     
 

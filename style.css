@@ -7785,6 +7785,9 @@ header {
 }
 
 #h3aba2pag2 {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
     position: relative;
     display: flex;
     color: #defad8;

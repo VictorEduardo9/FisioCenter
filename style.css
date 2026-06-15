@@ -7831,6 +7831,8 @@ header {
     border: 0px;
     cursor: pointer;
     z-index: 999;
+    transform: none;
+    left: auto;
     
 }
 

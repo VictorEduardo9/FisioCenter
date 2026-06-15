@@ -7824,7 +7824,7 @@ header {
 #btnvoltar {
     background-color: transparent;
     margin: 0;
-    margin-top: 7px;
+    padding-top: 10px;
     display: flex;
     border: 0px;
     cursor: pointer;

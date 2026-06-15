@@ -6851,8 +6851,6 @@ header {
 }
 
 #h2t1 {
-    transform: translateX(-60%);
-    left: 50%;
     font-size: 19px;
     text-align: center;
     
@@ -6919,8 +6917,6 @@ header {
 }
 
 #h2t2 {
-    transform: translateX(-56%);
-    left: 50%;
     font-size: 15px;
     text-align: center;
     

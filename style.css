@@ -740,25 +740,6 @@ header {
 
 }
 
-.agendaimagem {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    align-self: flex-end;
-    right: 235px;
-    top: 89px;
-    z-index: 0;
-    background-color: #00000046;
-    box-shadow: 0px 0px 65px #0000009f;
-    border-radius: 60px;
-
-
-}
-
-#agendaimg {
-    width: 580px;
-}
 
 .opcoesagenda {
     display: flex;
@@ -1874,25 +1855,6 @@ header {
 
 }
 
-.agendaimagem {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    align-self: flex-end;
-    right: 155px;
-    top: 89px;
-    z-index: 0;
-    background-color: #00000046;
-    box-shadow: 0px 0px 65px #0000009f;
-    border-radius: 60px;
-
-
-}
-
-#agendaimg {
-    width: 580px;
-}
 
 .opcoesagenda {
     display: flex;
@@ -3007,25 +2969,7 @@ header {
 
 }
 
-.agendaimagem {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    align-self: flex-end;
-    right: 155px;
-    top: 89px;
-    z-index: 0;
-    background-color: #00000046;
-    box-shadow: 0px 0px 65px #0000009f;
-    border-radius: 60px;
 
-
-}
-
-#agendaimg {
-    width: 580px;
-}
 
 .opcoesagenda {
     display: flex;
@@ -4141,25 +4085,6 @@ header {
 
 }
 
-.agendaimagem {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    align-self: flex-end;
-    right: 155px;
-    top: 89px;
-    z-index: 0;
-    background-color: #00000046;
-    box-shadow: 0px 0px 65px #0000009f;
-    border-radius: 60px;
-
-
-}
-
-#agendaimg {
-    width: 580px;
-}
 
 .opcoesagenda {
     display: flex;
@@ -5276,26 +5201,6 @@ header {
 
 }
 
-.agendaimagem {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    align-self: flex-end;
-    right: 155px;
-    top: 89px;
-    z-index: 0;
-    background-color: #00000046;
-    box-shadow: 0px 0px 65px #0000009f;
-    border-radius: 60px;
-
-
-}
-
-#agendaimg {
-    width: 580px;
-}
-
 .opcoesagenda {
     display: flex;
     gap: 60px;
@@ -6410,25 +6315,6 @@ header {
 
 }
 
-.agendaimagem {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    align-self: flex-end;
-    right: 155px;
-    top: 89px;
-    z-index: 0;
-    background-color: #00000046;
-    box-shadow: 0px 0px 65px #0000009f;
-    border-radius: 60px;
-
-
-}
-
-#agendaimg {
-    width: 580px;
-}
 
 .opcoesagenda {
     display: flex;
@@ -6806,7 +6692,8 @@ body {
     margin: 0;
     font-family: "Inter Tight", sans-serif;
     overflow-x: hidden;
-
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -6904,10 +6791,12 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 35px;
     background-color: #000000b3;
-    height: 250px;
+    height: 180px;
     box-shadow: 0px 0px 20px #000;
+    justify-self: center;
+    
 
 }
 
@@ -6921,8 +6810,7 @@ header {
     color: #d9ffd0;
     text-shadow: 2px 2px 1px rgb(97, 126, 93);
     top: 18px;
-    justify-items: center;
-    align-items: center;
+    
 
     
 }
@@ -6936,15 +6824,19 @@ header {
 }
 
 #pt1 {
-    position: absolute;
-    width: 340px;
+    width: 380px;
     font-weight: 530;
     font-family: "Inter Tight", sans-serif;
     color: #b9cebb;
     text-shadow: 2px 2px 3px rgb(41, 56, 41);
     font-size: 9px;
     cursor: default;
-    text-align: center;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    cursor: default;
+    margin-right: 31px;
+
     
     
 
@@ -6974,7 +6866,7 @@ header {
     margin: 0;
     background-image: url(Ref2.jpg);
     background-size: cover;
-    height: 450px;
+    height: 250px;
     max-width: 100%;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
@@ -6987,10 +6879,11 @@ header {
     justify-self: center;
     align-self: center;
     font-family: "Inter Tight", sans-serif;
-    font-size: 25px;
+    font-size: 12px;
     color: #d9ffd0;
     text-shadow: 2px 2px 1px rgb(97, 126, 93);
-    top: 58px;
+    top: 18px;
+    
     
 }
 
@@ -7003,17 +6896,19 @@ header {
 }
 
 #pt2 {
-    display: flex;
-    position: relative;
-    width: 760px;
+    width: 400px;
     font-weight: 530;
     font-family: "Inter Tight", sans-serif;
     color: #b9cebb;
     text-shadow: 2px 2px 3px rgb(41, 56, 41);
-    font-size: 18px;
+    font-size: 9px;
+    cursor: default;
+    position: relative;
     justify-self: center;
     align-self: center;
     cursor: default;
+    margin-left: 31px;
+    
 
     
 }
@@ -7029,9 +6924,9 @@ header {
     justify-items: center;
     align-items: center;
     border: 0px;
-    width: 268px;
-    height: 39px;
-    font-size: 20px;
+    width: 155px;
+    height: 25px;
+    font-size: 11px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 3px rgb(53, 70, 51);
     font-family: "Inter Tight", sans-serif;
@@ -7039,13 +6934,14 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
+    margin-top: 12px;
 
 }
 
 #btntrocar1 {
     position: absolute;
-    right: 17px;
-    top: 300px;
+    right: 5px;
+    top: 210px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -7056,8 +6952,8 @@ header {
 
 #btntrocar2 {
     position: absolute;
-    left: 17px;
-    top: 300px;
+    left: 5px;
+    top: 210px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -7066,11 +6962,11 @@ header {
 
 
 #btnproximo {
-    width: 40px;
+    width: 25px;
 }
 
 #btnanterior {
-    width: 40px;
+    width: 25px;
     
     
 }
@@ -7095,16 +6991,15 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 580px;
+    height: 990px;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
-    overflow: hidden;
-    gap: 20px;
+    
 }
 
 .titulo {
     overflow: hidden;
-    margin-top: 0px;
+    margin-top: 6px;
     margin-bottom: 0px;
     white-space: nowrap;
     width: 100%;
@@ -7113,7 +7008,7 @@ header {
 #tituloaba3 {
     color: #ebfde6e6;
     font-weight: 630;
-    font-size: 44px;
+    font-size: 28px;
     text-shadow: 0px 0px 10px rgb(142, 165, 131);
     animation: deslizar 32s linear infinite;
     cursor: default;
@@ -7134,12 +7029,12 @@ header {
 
 
 .fisioterapia {
-    margin-top: 4px;
-    margin-left: 40px;
+    margin-top: 1px;
+    margin-left: 10px;
     display: flex;
     gap: 20px;
     border-bottom: 2px solid #8caa868c;
-    padding-bottom: 48px;
+    padding-bottom: 30px;
     max-width: max-content;
    
 }
@@ -7166,10 +7061,13 @@ header {
 }
 
 .pilates {
-    margin-top: 27px;
-    margin-left: 40px;
+    margin-top: 12px;
+    margin-left: 10px;
     display: flex;
     gap: 20px;
+    border-bottom: 2px solid #8caa868c;
+    padding-bottom: 30px;
+    max-width: max-content;
     
 }
 
@@ -7183,8 +7081,8 @@ header {
 
 #frasepilates {
     color: #ddeedf;
-    width: 240px;
-    font-size: 14px;
+    width: 200px;
+    font-size: 12px;
     margin-top: 10px;
     font-weight: 300;
     margin-left: 10px;
@@ -7204,21 +7102,20 @@ header {
 
 .box2 {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 140px;
     box-sizing: content-box;
-    width: 230px;
-    height: 379px;
+    width: 330px;
+    height: 450px;
     background-color: #00000023;
-    right: 40px;
     box-shadow: 0px 0px 30px #00000054;
     border: 1.5px solid #00000023;
     border-radius: 20px;
+    margin-right: 15px;
+    margin-top: 510px;
+    
 }
 
 #h1box {
-    font-size: 9px;
+    font-size: 13px;
     justify-self: center;
     align-self: center;
     color: #e9ffe5;
@@ -7231,7 +7128,7 @@ header {
     justify-self: center;
     align-self: center;
     margin-top: 5px;
-    font-size: 7px;
+    font-size: 10px;
     cursor: default;
     
 }
@@ -7240,7 +7137,7 @@ header {
     margin-top: 1px;
     justify-self: center;
     align-self: center;
-    width: 130px;
+    width: 150px;
     height: auto;
     border-radius: 16px;
 }
@@ -7250,7 +7147,7 @@ header {
     justify-self: center;
     align-self: center;
     margin-top: 6px;
-    font-size: 6px;
+    font-size: 9px;
     text-shadow: 0px 0px 6.5px rgb(0, 0, 0);
     cursor: default;
 }
@@ -7258,7 +7155,7 @@ header {
 #horario {
     justify-self: center;
     align-self: center;
-    width: 155px;
+    width: 185px;
     margin-top: 10px;
     margin-bottom: 10px;
     
@@ -7288,7 +7185,7 @@ header {
 .aba4 {
     position: relative;
     padding-top: 13px;
-    height: 416px;
+    height: 306px;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 25px rgb(115, 151, 113);
     background-color: #0000001a;
@@ -7299,12 +7196,11 @@ header {
 #equipe {
     color: #eaffe7;
     font-weight: 630;
-    font-size: 36px;
+    font-size: 24px;
     cursor: default;
-    margin-top: 16px;
+    margin-top: 13px;
     z-index: 100;
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 20px;
     width: 800px;
     margin-bottom: 0px;
     text-shadow: 0px 0px 25px #010a00be;
@@ -7324,10 +7220,11 @@ header {
     top: 40px;
     color: #ccd8c7ad;
     font-weight: 630;
-    font-size: 18px;
+    font-size: 12.5px;
     text-shadow: 0px 0px 25px #010a00be;
     cursor: default;
     width: 510px;
+    margin-top: 0;
     
 
     
@@ -7341,8 +7238,8 @@ header {
 }
 
 #fisio1, #fisio2, #fisio3 {
-    width: 180px;
-    border-radius: 30px;
+    width: 110px;
+    border-radius: 20px;
     box-shadow: 0 0 15px #CDCBCC;
 }
 
@@ -7350,7 +7247,7 @@ header {
     color: rgb(245, 238, 238);
     text-shadow: 0px 0px 10px rgb(161, 202, 145);
     cursor: default;
-    font-size: 11px;
+    font-size: 8px;
 }
 
 .funcionario1, .funcionario2, .funcionario3 {
@@ -7362,14 +7259,12 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 150px;
     width: 100%;
     background-color: #1d221cb3;
     border-top: 1px solid rgb(115, 151, 113);
     box-shadow: 2px rgb(115, 151, 113);
     bottom: 0px;
-    z-index: 100;
-    flex: 1;
+    
     
 
 }
@@ -7377,18 +7272,20 @@ header {
 .aba5voltar{
     align-items: center;
     justify-items: center;
+    
 }
 
 #h3aba5 {
     color: #defad8;
     text-shadow: 0px 0px 25px rgb(12, 20, 11);
     cursor: default;
+    font-size: 16px;
 
     
 }
 
 .instagram {
-    
+    margin-top: 32px;
     bottom: 0px;
     left: 15px;
     position: relative;
@@ -7400,11 +7297,12 @@ header {
 }
 
 #instalogo {
-    width: 15px;
+    width: 10px;
     margin-right: 2.1px;
 }
 
 #instap {
+    font-size: 11px;
     color: white;
     font-weight: 600;
     cursor: default;
@@ -7421,9 +7319,9 @@ header {
     justify-items: center;
     align-items: center;
     border: 0px;
-    width: 248px;
-    height: 39px;
-    font-size: 20px;
+    width: 155px;
+    height: 25px;
+    font-size: 11px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 3px rgb(53, 70, 51);
     font-family: "Inter Tight", sans-serif;
@@ -7431,6 +7329,9 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
+    z-index: 99999999;
+    
+    
 
 }
 
@@ -7443,28 +7344,37 @@ header {
    display: flex;
    padding-left: 9px;
    margin-top: 0;
-   height: 80px;
+   height: 60px;
    width: 100%;
    background-color: #40533bb3;
    font-family: "Inter Tight", sans-serif;
-   border-bottom: 1.4px solid rgb(115, 151, 113);
-   box-shadow: 0px 0px 35px rgb(115, 151, 113);
+   border-bottom: 4.4px solid rgb(115, 151, 113);
+   
 }
 
 #h1fisio2 {
     position: relative;
-    font-size: 56px;
+    font-size: 36px;
     margin-top: 5px;
     font-weight: 420;
     text-shadow: 2px 2px 4.5px #163b04;
     color: #ebfde6;
     left: 5px;
     cursor: pointer;
-    
+     
+}
+
+#logo {
+    margin-top: 4.5px;
+    margin-left: 8px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
 }
 
 .aba2agendar {
-    height: 350px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     background-image: url(BackgroundFundo.png);
@@ -7477,14 +7387,14 @@ header {
 #h1pag2 {
     color: #ffffff;
     font-weight: 630;
-    font-size: 50px;
+    font-size: 32px;
     text-shadow: 0px 0px 10px rgba(142, 165, 131, 0.699);
     cursor: default;
     margin-top: 16px;
     z-index: 100;
-    margin-top: 30px;
-    margin-left: 35px;
-    width: 400px;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 250px;
     margin-bottom: 0px;
     
 
@@ -7494,12 +7404,12 @@ header {
     position: relative;
     color: #ccd8c7;
     font-weight: 630;
-    font-size: 20px;
+    font-size: 13px;
     text-shadow: 0px 0px 10px rgba(142, 165, 131, 0.699);
     cursor: default;
-    width: 310px;
+    width: 200px;
     margin-top: 9px;
-    margin-left: 38px;
+    margin-left: 19px;
     margin-bottom: 0px;
     
     
@@ -7515,7 +7425,7 @@ header {
     position: relative;
     justify-items: center;
     align-items: center;
-    margin-left: 43px;
+    margin-left: 30px;
     
     
 }
@@ -7524,47 +7434,25 @@ header {
 #expandiragenda {
     display: flex;
     position: relative;
-    justify-self: center;
-    align-self: center;
     background-color: #8caa86;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
     border: 0px;
-    width: 248px;
-    height: 52px;
-    font-size: 20px;
+    width: 171px;
+    height: 45px;
+    font-size: 14px;
     color: rgb(0, 0, 0);
     font-family: "Inter Tight", sans-serif;
     font-weight: 700;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 23px #6a9b6d;
-    margin-top: 25px;
-    margin-left: 5px;
+    margin-top: 15px;
+    margin-left: 0;
+    
+    
 
 }
 
-.agendaimagem {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    align-self: flex-end;
-    right: 155px;
-    top: 89px;
-    z-index: 0;
-    background-color: #00000046;
-    box-shadow: 0px 0px 65px #0000009f;
-    border-radius: 60px;
 
-
-}
-
-#agendaimg {
-    width: 580px;
-}
 
 .opcoesagenda {
     display: flex;
@@ -7610,14 +7498,14 @@ header {
     justify-content: center;
     align-content: center;
     justify-items: center;
-    font-size: 25px; 
+    font-size: 15px; 
    
       
 }
 
 .opcoes {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     padding: 0px;
     border-bottom: 2px solid #8caa868c;
     border-top: 2px solid #8caa868c;
@@ -7628,7 +7516,7 @@ header {
 
 .opcaoservico select, .opcaohorario select {
     cursor: pointer;
-    width: 200px;
+    width: 85px;
     height: 35px;
     border-radius: 7px;
     background-color: #0000008f;
@@ -7640,7 +7528,7 @@ header {
 
 .opcaodata input {
     cursor: pointer;
-    width: 200px;
+    width: 85px;
     height: 35px;
     border-radius: 7px;
     background-color: #0000008f;
@@ -7658,9 +7546,9 @@ header {
     justify-content: center;
     align-items: center;
     border: 0px;
-    width: 168px;
-    height: 39px;
-    font-size: 16px;
+    width: 148px;
+    height: 36px;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 3px rgb(53, 70, 51);
     font-family: "Inter Tight", sans-serif;
@@ -7668,6 +7556,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 23px #6a9b6d;
+    z-index: 999999;
 
 }
 
@@ -7694,14 +7583,13 @@ header {
 }
 
 #confirmacao {
-    width: 600;
+    width: 150px;
     display: flex;
-    justify-content: center;
+    padding-right: 170px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 15px;
+    bottom: 32px;
     text-align: center;
+    font-size: 10px;
     
 }
 
@@ -7864,7 +7752,7 @@ header {
 }
 
 #instalogo2 {
-    width: 15px;
+    width: 10px;
     margin-right: 2.1px;
 }
 
@@ -7872,6 +7760,7 @@ header {
     color: white;
     font-weight: 600;
     cursor: default;
+    font-size: 11px;
 }
 
 #btnvoltar {
@@ -7884,12 +7773,13 @@ header {
     align-self: center;
     border: 0px;
     cursor: pointer;
+    z-index: 999;
     
 }
 
 #voltarimg {
-    margin-top: 0;
-    width: 85px;
+    margin-bottom: 13px;
+    width: 60px;
 }
 
 #h3agenda {

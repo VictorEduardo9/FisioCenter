@@ -7772,7 +7772,6 @@ header {
     z-index: 100;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    height: auto;
     padding: 0 0;
     justify-content: center;
     
@@ -7785,18 +7784,15 @@ header {
 }
 
 #h3aba2pag2 {
-    justify-self: center;
-    align-self: center;
-    position: relative;
-    display: flex;
     color: #defad8;
     text-shadow: 0px 0px 25px rgb(12, 20, 11);
     cursor: default;
     margin-top: 14px;
     font-size: 16px;
-    transform: translateX(-50%);
-    left: 50%;
-    margin: 0;
+    transform: none;
+    text-align: center;
+    left: auto;
+    
     
     
 }

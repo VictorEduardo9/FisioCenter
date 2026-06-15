@@ -6852,8 +6852,9 @@ header {
 
 #h2t1 {
     transform: translateX(-60%);
-    left: 54.5%;
+    left: 50%;
     font-size: 19px;
+    text-align: center;
     
 }
 
@@ -6869,31 +6870,21 @@ header {
     justify-self: center;
     align-self: center;
     cursor: default;
-    transform: translateX(-60%);
-    left: 54.5%;
+    transform: translateX(-50%);
+    left: 50%;
  
 
     
 }
 
-#img1 {
-    
-    width: 500px;
-    top: 09px;
-    height: auto;
-    border-radius: 30px;
-    justify-self: flex-end;    
-    align-self: flex-end;
-    margin-right: 28px;
-}
 
 
 #h2t1, #pt1, #h2t2, #pt2 {
     text-align: center;
-    width: 90%;
     max-width: 380px;
     margin-left: 0;
     margin-right: 0;
+    
 }
 
 
@@ -6928,9 +6919,10 @@ header {
 }
 
 #h2t2 {
-    transform: translateX(-60%);
-    left: 54.5%;
+    transform: translateX(-56%);
+    left: 50%;
     font-size: 15px;
+    text-align: center;
     
 }
 

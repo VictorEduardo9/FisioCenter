@@ -127,6 +127,15 @@ document.getElementById("btnconfirmar").addEventListener("click" , async() => {
         return;
     }
 
+    const dataLimite = new Date(dataAtual);
+    dataLimite.setMonth(dataLimite.getMonth() + 2);
+    
+    if (dataSelecionada > dataLimite) {
+        conf.textContent = "Data fora do limite - Agendamentos somente até 2 meses de antecedência. ⚠️"
+        conf.style.color = "#f0db80";
+        return;
+    }
+
 
     try {
         const verificacao = query(
@@ -213,6 +222,13 @@ async function carregaragendamentos() {
 document.getElementById("btnvoltar").addEventListener("click", () => {
     window.location.href = "index.html"
     })
+
+["servico" , "data" , "horariosel"].forEach((id) => {
+        document.getElementById(id).addEventListener("change" , () => {
+            conf.textContent = "";
+            conf.style.color = "";
+        });
+    });
 
 
 

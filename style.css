@@ -1,3 +1,11 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 @media (min-width: 1740px) {
 body {
     background-color: #222224;
@@ -565,6 +573,8 @@ header {
     bottom: 0px;
     z-index: 100;
     flex: 1;
+    height: auto;
+    padding: 0;
     
 
 }
@@ -583,22 +593,24 @@ header {
 }
 
 .instagram {
-    bottom: 0px;
-    left: 15px;
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-items: center;
+    margin: 0;
     align-items: center;
+    bottom: 0;
+    left: 12px;
+
     
 }
 
 #instalogo {
     width: 15px;
+    height: 15px;
     margin-right: 2.1px;
 }
 
 #instap {
+    font-size: 14px;
     color: white;
     font-weight: 600;
     cursor: default;
@@ -625,6 +637,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
+    margin-bottom: 23px;
 
 }
 
@@ -1679,6 +1692,8 @@ header {
     bottom: 0px;
     z-index: 100;
     flex: 1;
+    height: auto;
+    padding: 0;
     
 
 }
@@ -1697,23 +1712,24 @@ header {
 }
 
 .instagram {
-    
-    bottom: 0px;
-    left: 15px;
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-items: center;
+    margin: 0;
     align-items: center;
+    bottom: 0;
+    left: 12px;
+
     
 }
 
 #instalogo {
     width: 15px;
+    height: 15px;
     margin-right: 2.1px;
 }
 
 #instap {
+    font-size: 14px;
     color: white;
     font-weight: 600;
     cursor: default;
@@ -1740,6 +1756,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
+    margin-bottom: 23px;
 
 }
 
@@ -2811,23 +2828,24 @@ header {
 }
 
 .instagram {
-    
-    bottom: 0px;
-    left: 15px;
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-items: center;
+    margin: 0;
     align-items: center;
+    bottom: 0;
+    left: 12px;
+
     
 }
 
 #instalogo {
     width: 15px;
+    height: 15px;
     margin-right: 2.1px;
 }
 
 #instap {
+    font-size: 14px;
     color: white;
     font-weight: 600;
     cursor: default;
@@ -2854,6 +2872,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
+    margin-bottom: 23px;
 
 }
 
@@ -3909,6 +3928,8 @@ header {
     bottom: 0px;
     z-index: 100;
     flex: 1;
+    height: auto;
+    padding: 0;
     
 
 }
@@ -3927,23 +3948,24 @@ header {
 }
 
 .instagram {
-    
-    bottom: 0px;
-    left: 15px;
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-items: center;
+    margin: 0;
     align-items: center;
+    bottom: 0;
+    left: 12px;
+
     
 }
 
 #instalogo {
     width: 15px;
+    height: 15px;
     margin-right: 2.1px;
 }
 
 #instap {
+    font-size: 14px;
     color: white;
     font-weight: 600;
     cursor: default;
@@ -3970,7 +3992,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
-
+    margin-bottom: 23px;
 }
 
 
@@ -5025,6 +5047,8 @@ header {
     bottom: 0px;
     z-index: 100;
     flex: 1;
+    height: auto;
+    padding: 0;
     
 
 }
@@ -5043,23 +5067,24 @@ header {
 }
 
 .instagram {
-    
-    bottom: 0px;
-    left: 15px;
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-items: center;
+    margin: 0;
     align-items: center;
+    bottom: 0;
+    left: 12px;
+
     
 }
 
 #instalogo {
     width: 15px;
+    height: 15px;
     margin-right: 2.1px;
 }
 
 #instap {
+    font-size: 14px;
     color: white;
     font-weight: 600;
     cursor: default;
@@ -5086,6 +5111,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
+    margin-bottom: 23px;
 
 }
 
@@ -6139,6 +6165,8 @@ header {
     bottom: 0px;
     z-index: 100;
     flex: 1;
+    height: auto;
+    padding: 0;
     
 
 }
@@ -6157,23 +6185,24 @@ header {
 }
 
 .instagram {
-    
-    bottom: 0px;
-    left: 15px;
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-items: center;
+    margin: 0;
     align-items: center;
+    bottom: 0;
+    left: 12px;
+
     
 }
 
 #instalogo {
     width: 15px;
+    height: 15px;
     margin-right: 2.1px;
 }
 
 #instap {
+    font-size: 14px;
     color: white;
     font-weight: 600;
     cursor: default;
@@ -6200,6 +6229,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
+    margin-bottom: 23px;
 
 }
 
@@ -6698,6 +6728,7 @@ body {
 
 
 
+
 header {
    display: flex;
    padding-left: 9px;
@@ -6742,7 +6773,7 @@ header {
 
 #usuario {
     color: white;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 560;
     margin-bottom: 5px;
     cursor: default;
@@ -7109,8 +7140,9 @@ header {
     box-shadow: 0px 0px 30px #00000054;
     border: 1.5px solid #00000023;
     border-radius: 20px;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-top: 510px;
+    align-items: center
     
 }
 
@@ -7262,8 +7294,13 @@ header {
     width: 100%;
     background-color: #1d221cb3;
     border-top: 1px solid rgb(115, 151, 113);
-    box-shadow: 2px rgb(115, 151, 113);
-    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+    gap: 6px;
+    
     
     
 
@@ -7280,20 +7317,16 @@ header {
     text-shadow: 0px 0px 25px rgb(12, 20, 11);
     cursor: default;
     font-size: 16px;
+    margin-top: 0;
 
     
 }
 
 .instagram {
-    margin-top: 32px;
-    bottom: 0px;
-    left: 15px;
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    
+    margin: 0;
+
 }
 
 #instalogo {
@@ -7330,6 +7363,7 @@ header {
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
     z-index: 99999999;
+    margin-bottom: 20px;
     
     
 
@@ -7583,13 +7617,13 @@ header {
 }
 
 #confirmacao {
-    width: 150px;
+    width: 170px;
     display: flex;
     padding-right: 170px;
     position: absolute;
     bottom: 32px;
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
     
 }
 
@@ -7690,7 +7724,7 @@ header {
     text-shadow: 2px 2px 3px rgb(53, 13, 4);
     height: 45px;
     background-color: transparent;
-    border: 1.7px solid #7a1111;
+    border: 1.2px solid #7a1111;
     border-radius: 12px;
     cursor: pointer;
     justify-items: center;
@@ -7723,6 +7757,8 @@ header {
     z-index: 100;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    height: auto;
+    padding: 0 0;
 
 }
 
@@ -7735,6 +7771,8 @@ header {
     color: #defad8;
     text-shadow: 0px 0px 25px rgb(12, 20, 11);
     cursor: default;
+    margin-top: 14px;
+    font-size: 16px;
 
     
 }

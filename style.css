@@ -7321,8 +7321,7 @@ header {
     cursor: default;
     font-size: 16px;
     margin-top: 0;
-    transform: translateX(-100px);
-    left: 100%;
+    left: 50%;
     
 }
 

@@ -6963,6 +6963,8 @@ header {
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
     margin-top: 12px;
+    transform: translateX(-50%);
+    left: 50%;
 
 }
 
@@ -7322,8 +7324,8 @@ header {
     cursor: default;
     font-size: 16px;
     margin-top: 0;
-    transform: translateX(50px);
-    right: 50%;
+    transform: translateX(-50px);
+    left: 50%;
     
 }
 

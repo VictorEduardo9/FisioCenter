@@ -7351,7 +7351,6 @@ header {
 
 #btnagendar2 {
     display: flex;
-    position: relative;
     justify-self: center;
     align-self: center;
     background-color: #8caa86;
@@ -7372,8 +7371,7 @@ header {
     box-shadow: 0px 0px 15px #9de0a0;
     z-index: 99999999;
     margin-bottom: 17px;
-    transform: translateX(-100px);
-    left: 50%;
+    
     
     
 

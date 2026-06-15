@@ -7311,8 +7311,8 @@ header {
 .aba5voltar{
     align-items: center;
     justify-items: center;
-    transform: translateX(-50px);
-    left: 50%;
+    transform: translateX(50px);
+    right: 50%;
     
 }
 

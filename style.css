@@ -6829,6 +6829,7 @@ header {
     box-shadow: 0px 0px 20px #000;
     justify-self: center;
     width: 100%;
+    align-items: center;
     
 
 }
@@ -6842,7 +6843,8 @@ header {
     font-size: 15px;
     color: #d9ffd0;
     text-shadow: 2px 2px 1px rgb(97, 126, 93);
-    top: 18px;
+    top: 36px;
+    
     
 
     
@@ -6851,23 +6853,24 @@ header {
 #h2t1 {
     font-size: 19px;
     text-align: center;
+    width: 100%;
     
+
 }
 
 #pt1 {
-    width: 380px;
     font-weight: 530;
     font-family: "Inter Tight", sans-serif;
     color: #b9cebb;
     text-shadow: 2px 2px 3px rgb(41, 56, 41);
     font-size: 9px;
     cursor: default;
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    cursor: default;
-    transform: translateX(-50%);
-    left: 50%;
+    width: 100%;     
+    max-width: 380px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid red;  
+    
  
 
     
@@ -6878,8 +6881,14 @@ header {
 #h2t1, #pt1, #h2t2, #pt2 {
     text-align: center;
     max-width: 380px;
-    margin-left: 0;
-    margin-right: 0;
+    
+}
+
+.frase1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;          
+    text-align: center;
     
 }
 
@@ -6932,14 +6941,22 @@ header {
     justify-self: center;
     align-self: center;
     cursor: default;
-    transform: translateX(-50%);
-    left: 50%;
-    
+    text-align: center;
 
-    
+}
+
+
+.frase2 {
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
 }
 
 #btnagendar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

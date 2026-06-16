@@ -474,6 +474,16 @@ header {
     transform: scale(1.1);
 }
 
+#btnagendar:hover,
+#btnagendar2:hover,
+#btnvoltar:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+.box2:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
 @keyframes passar {
     0% {
         transform: scale(1);
@@ -6717,6 +6727,10 @@ h6 {
 
 
 @media (max-width: 528px) {
+
+/* ============================================================
+   BASE
+   ============================================================ */
 body {
     background-color: #222224;
     max-width: 100%;
@@ -6724,43 +6738,41 @@ body {
     font-family: "Inter Tight", sans-serif;
     overflow-x: hidden;
     width: 100%;
-    height: 100%;
 }
 
-
-
-
-header {
-   display: flex;
-   padding-left: 9px;
-   margin-top: 0;
-   height: 60px;
-   width: 100%;
-   background-color: #40533bb3;
-   font-family: "Inter Tight", sans-serif;
-   border-bottom: 4.4px solid rgb(115, 151, 113);
-   
+/* ============================================================
+   HEADER
+   ============================================================ */
+header,
+#header2 {
+    display: flex;
+    align-items: center;
+    padding-left: 9px;
+    margin-top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #40533bb3;
+    font-family: "Inter Tight", sans-serif;
+    border-bottom: 4.4px solid rgb(115, 151, 113);
+    box-sizing: border-box;
 }
 
-#h1fisio {
-    position: relative;
+#h1fisio,
+#h1fisio2 {
     font-size: 36px;
-    margin-top: 5px;
+    margin: 0;
     font-weight: 420;
     text-shadow: 2px 2px 4.5px #163b04;
     color: #ebfde6;
-    left: 5px;
     cursor: pointer;
-     
 }
 
 #logo {
-    margin-top: 4.5px;
     margin-left: 8px;
     width: 48px;
     height: 48px;
     cursor: pointer;
-
+    flex-shrink: 0;
 }
 
 .arealogin {
@@ -6769,7 +6781,6 @@ header {
     align-items: center;
     right: 4px;
     top: 5px;
-    
 }
 
 #usuario {
@@ -6778,184 +6789,114 @@ header {
     font-weight: 560;
     margin-bottom: 5px;
     cursor: default;
-
 }
 
-#logingoogle {
-    right: 8px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-#googleimg {
-    width: 130px;
-    height: auto;
-    
-}
-
+#logingoogle,
 #logoutgoogle {
-    right: 8px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
 }
 
-#sairimg {
-    width: 80px;
-    height: auto;
-    
-}
+#googleimg { width: 130px; height: auto; }
+#sairimg   { width: 80px;  height: auto; }
 
-.aba1 {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    background-image: url(Ref1.jpg);
-    background-size: cover;
-    height: 250px;
-    max-width: 100%;
-    border-bottom: 1.6px solid rgb(115, 151, 113);
-    box-shadow: 0px 2px 35px rgb(115, 151, 113);
-    align-items: center;
-    
-}
-
-.box1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 35px;
-    background-color: #000000b3;
-    height: 180px;
-    box-shadow: 0px 0px 20px #000;
-    justify-self: center;
-    width: 100%;
-    
-
-}
-
-
-.frases1a {
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    font-family: "Inter Tight", sans-serif;
-    font-size: 15px;
-    color: #d9ffd0;
-    text-shadow: 2px 2px 1px rgb(97, 126, 93);
-    top: 18px;
-    
-
-    
-}
-
-#h2t1 {
-    font-size: 19px;
-    text-align: center;
-    
-}
-
-#pt1 {
-    width: 380px;
-    font-weight: 530;
-    font-family: "Inter Tight", sans-serif;
-    color: #b9cebb;
-    text-shadow: 2px 2px 3px rgb(41, 56, 41);
-    font-size: 9px;
-    cursor: default;
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    cursor: default;
-    transform: translateX(-50%);
-    left: 50%;
- 
-
-    
-}
-
-
-
-#h2t1, #pt1, #h2t2, #pt2 {
-    text-align: center;
-    max-width: 380px;
-    margin-left: 0;
-    margin-right: 0;
-    
-}
-
-
-
-
+/* ============================================================
+   ABA 1 E ABA 2 — HERO SLIDES
+   ============================================================ */
+.aba1,
 .aba2 {
     display: flex;
     flex-direction: column;
+    align-items: center;           /* centraliza .box1 horizontalmente */
     margin: 0;
-    background-image: url(Ref2.jpg);
     background-size: cover;
     height: 250px;
     max-width: 100%;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
-    align-items: center;
+    animation: slideIn 0.5s ease-in-out;
 }
 
+.aba1 { background-image: url(Ref1.jpg); }
+.aba2 { background-image: url(Ref2.jpg); }
 
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(50px); }
+    to   { opacity: 1; transform: translateX(0);    }
+}
 
+/* Box semitransparente que cobre o hero */
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;           /* centraliza .frases1a/.frases2a */
+    justify-content: center;
+    margin-top: 35px;
+    background-color: #000000b3;
+    height: 180px;
+    width: 100%;
+    box-shadow: 0px 0px 20px #000;
+    box-sizing: border-box;
+}
+
+/* Containers de texto dentro do hero */
+.frases1a,
 .frases2a {
-    position: relative;
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;           /* centraliza h2 e p */
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+/* Títulos e parágrafos do hero — sem transform, sem left */
+#h2t1 {
+    font-size: 19px;
     font-family: "Inter Tight", sans-serif;
-    font-size: 12px;
     color: #d9ffd0;
     text-shadow: 2px 2px 1px rgb(97, 126, 93);
-    top: 18px;
-    
-    
+    text-align: center;
+    margin: 0 0 6px;
+    width: 100%;
 }
 
 #h2t2 {
     font-size: 15px;
+    font-family: "Inter Tight", sans-serif;
+    color: #d9ffd0;
+    text-shadow: 2px 2px 1px rgb(97, 126, 93);
     text-align: center;
-    
+    margin: 0 0 6px;
+    width: 100%;
 }
 
+#pt1,
 #pt2 {
-    width: 400px;
+    font-size: 9px;
     font-weight: 530;
     font-family: "Inter Tight", sans-serif;
     color: #b9cebb;
     text-shadow: 2px 2px 3px rgb(41, 56, 41);
-    font-size: 9px;
-    cursor: default;
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    cursor: default;
-    transform: translateX(-50%);
-    left: 50%;
-    
-
-    
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+    margin: 0;
+    /* SEM transform, SEM left, SEM position: relative */
 }
 
+/* Botão "Entre e Agende" — centralizado pelo flex do pai */
 #btnagendar {
     display: flex;
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    background-color: #8caa86;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
     align-items: center;
-    border: 0px;
+    justify-content: center;
+    background-color: #8caa86;
+    border: 0;
     width: 155px;
     height: 25px;
     font-size: 11px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-shadow: 2px 2px 3px rgb(53, 70, 51);
     font-family: "Inter Tight", sans-serif;
     font-weight: 700;
@@ -6963,11 +6904,10 @@ header {
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
     margin-top: 12px;
-    transform: translateX(-50%);
-    left: 50%; 
-
+    /* SEM transform, SEM position, SEM left */
 }
 
+/* Botões de navegação entre abas */
 #btntrocar1 {
     position: absolute;
     right: 5px;
@@ -6976,8 +6916,6 @@ header {
     border: 0;
     cursor: pointer;
     border-radius: 12px;
-    
-
 }
 
 #btntrocar2 {
@@ -6990,47 +6928,27 @@ header {
     border-radius: 12px;
 }
 
+#btnproximo,
+#btnanterior { width: 25px; }
 
-#btnproximo {
-    width: 25px;
-}
-
-#btnanterior {
-    width: 25px;
-    
-    
-}
-
-.aba1, .aba2 {
-    animation: slideIn 0.5s ease-in-out;
-}
-
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
+/* ============================================================
+   ABA 3 — PROPOSTA
+   ============================================================ */
 .aba3 {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 990px;
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 35px rgb(115, 151, 113);
-    
 }
 
+/* Título animado */
 .titulo {
     overflow: hidden;
     margin-top: 6px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     white-space: nowrap;
     width: 100%;
 }
@@ -7042,22 +6960,15 @@ header {
     text-shadow: 0px 0px 10px rgb(142, 165, 131);
     animation: deslizar 32s linear infinite;
     cursor: default;
+    display: inline-block;
 }
-
 
 @keyframes deslizar {
-    100% {
-        transform:translateX(100%)
-    }
-
-    0% {
-        transform: translateX(-45%);
-    }
+    0%   { transform: translateX(-45%); }
+    100% { transform: translateX(100%); }
 }
 
-
-
-
+/* Bloco Fisioterapia */
 .fisioterapia {
     margin-top: 1px;
     margin-left: 10px;
@@ -7065,16 +6976,28 @@ header {
     gap: 7px;
     border-bottom: 2px solid #8caa868c;
     padding-bottom: 30px;
-    max-width: max-content;
-   
+    align-self: flex-start;        /* alinha ao início para não forçar stretch */
 }
 
-#ref5 {
+/* Bloco Pilates */
+.pilates {
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    gap: 7px;
+    border-bottom: 2px solid #8caa868c;
+    padding-bottom: 30px;
+    align-self: flex-start;
+}
+
+#ref5,
+#ref4 {
     width: 190px;
     height: 140px;
     border-radius: 18px;
     border: 1.8px solid rgb(115, 151, 113);
     box-shadow: 0px 0px 13px rgba(115, 151, 113, 0.89);
+    flex-shrink: 0;
 }
 
 #frasefisio {
@@ -7085,28 +7008,8 @@ header {
     font-weight: 300;
     margin-left: 10px;
     cursor: default;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     text-shadow: 0px 0px 35px #010a00be;
-
-}
-
-.pilates {
-    margin-top: 12px;
-    margin-left: 10px;
-    display: flex;
-    gap: 7px;
-    border-bottom: 2px solid #8caa868c;
-    padding-bottom: 30px;
-    max-width: max-content;
-    
-}
-
-#ref4 {
-    width: 190px;
-    height: 140px;
-    border-radius: 18px;
-    border: 1.8px solid rgb(115, 151, 113);
-    box-shadow: 0px 0px 13px rgba(115, 151, 113, 0.89);
 }
 
 #frasepilates {
@@ -7117,59 +7020,51 @@ header {
     font-weight: 300;
     margin-left: 10px;
     cursor: default;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     text-shadow: 0px 0px 35px #010a00be;
-
 }
 
-#icone1img , #icone2img {
-    width: 60px;
-    height: 60px;
-    justify-items: center;
-    align-items: center;
-    align-self: center;
-}
-
+/* Box de localização/horário — centralizada via margin auto */
 .box2 {
     position: absolute;
-    box-sizing: content-box;
-    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 330px;
     height: 450px;
     background-color: #00000023;
     box-shadow: 0px 0px 30px #00000054;
     border: 1.5px solid #00000023;
     border-radius: 20px;
-    margin-right: 10px;
     margin-top: 510px;
-    align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
-    
+    /* centralização SEM transform: usa left/right auto */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #h1box {
     font-size: 13px;
-    justify-self: center;
-    align-self: center;
     color: #e9ffe5;
     text-shadow: 0px 0px 22.5px rgb(160, 160, 160);
     cursor: default;
+    text-align: center;
+    padding: 0 8px;
 }
 
 #pbox {
     color: #c6ddc2;
-    justify-self: center;
-    align-self: center;
     margin-top: 5px;
     font-size: 10px;
     cursor: default;
-    
+    text-align: center;
 }
 
 #reflocal {
     margin-top: 1px;
-    justify-self: center;
-    align-self: center;
     width: 150px;
     height: auto;
     border-radius: 16px;
@@ -7177,44 +7072,22 @@ header {
 
 #p1box {
     color: #738570;
-    justify-self: center;
-    align-self: center;
     margin-top: 6px;
     font-size: 9px;
     text-shadow: 0px 0px 6.5px rgb(0, 0, 0);
     cursor: default;
+    text-align: center;
 }
 
 #horario {
-    justify-self: center;
-    align-self: center;
     width: 185px;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
-
-#ref4:hover, #ref5:hover , #btnagendar:hover , #btnagendar2:hover , #fisio1:hover ,
- #fisio2:hover , #fisio3:hover , #btnanterior:hover , #btnproximo:hover ,
- .box2:hover , #reflocal:hover , #horario:hover , #logingoogle:hover , #logoutgoogle:hover ,
- #expandiragenda:hover , #btnvoltar:hover , .btncancelar:hover , #btnconfirmar:hover,
- #servico:hover , #data:hover , #horariosel:hover{
-    animation: passar 0.09s linear;
-    transform: scale(1.1);
-}
-
-@keyframes passar {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.1);
-    }
-    
-}
-
+/* ============================================================
+   ABA 4 — EQUIPE
+   ============================================================ */
 .aba4 {
     position: relative;
     padding-top: 13px;
@@ -7222,54 +7095,56 @@ header {
     border-bottom: 1.6px solid rgb(115, 151, 113);
     box-shadow: 0px 2px 25px rgb(115, 151, 113);
     background-color: #0000001a;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    
-    
 }
 
+.equipediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Sem position: absolute, sem width: 800px, sem margin-left fixo */
 #equipe {
     color: #eaffe7;
     font-weight: 630;
     font-size: 24px;
     cursor: default;
-    margin-top: 13px;
-    z-index: 100;
-    margin-left: 20px;
-    width: 800px;
-    margin-bottom: 0px;
+    margin: 13px 0 0;
     text-shadow: 0px 0px 25px #010a00be;
-    
-    
-}
-
-.equipediv {
-    position: relative;
-    margin-bottom: 80px;
+    text-align: center;
+    width: 90%;
 }
 
 #aba4p {
-    position: absolute;
-    display: flex;
-    margin-left: 70px;
-    top: 40px;
     color: #ccd8c7ad;
     font-weight: 630;
     font-size: 12.5px;
     text-shadow: 0px 0px 25px #010a00be;
     cursor: default;
-    width: 510px;
-    margin-top: 0;
-    
-
-    
+    text-align: center;
+    width: 90%;
+    margin-top: 4px;
+    /* SEM position: absolute, SEM top, SEM margin-left fixo */
 }
 
 .funcionarios {
     display: flex;
-    justify-self: center;
-    gap: 20px;
     justify-content: center;
-    
+    gap: 20px;
+    width: 100%;
+}
+
+.funcionario1,
+.funcionario2,
+.funcionario3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #fisio1, #fisio2, #fisio3 {
@@ -7283,65 +7158,82 @@ header {
     text-shadow: 0px 0px 10px rgb(161, 202, 145);
     cursor: default;
     font-size: 8px;
+    text-align: center;
 }
 
-.funcionario1, .funcionario2, .funcionario3 {
-    justify-items: center;
-    align-items: center;
-}
-
+/* ============================================================
+   ABA 5 — RODAPÉ (index.html)
+   Frase + botão: centralizados via flex
+   Instagram: canto inferior esquerdo via position absolute
+   ============================================================ */
 .aba5 {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: #1d221cb3;
     border-top: 1px solid rgb(115, 151, 113);
-    align-items: center;
     height: auto;
-    padding: 10px 0;
-    gap: 6px;
-    
-    
-    
-
+    padding: 12px 0 28px;     /* padding-bottom reserva espaço pro instagram */
+    gap: 8px;
+    box-sizing: border-box;
 }
 
-.aba5voltar{
+.aba5voltar {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    
-    
+    gap: 8px;
+    width: 100%;
 }
 
 #h3aba5 {
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    cursor: default;
     color: #defad8;
     text-shadow: 0px 0px 25px rgb(12, 20, 11);
-    font-size: 16px;
-    margin-top: 0;
-    transform: translateX(-50%);
-    left: 50%;
+    cursor: default;
+    font-size: 15px;
+    text-align: center;
     margin: 0;
-    
+    padding: 0 16px;
+    /* SEM transform, SEM left, SEM position */
 }
 
+#btnagendar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8caa86;
+    border: 0;
+    width: 145px;
+    height: 25px;
+    font-size: 11px;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #9de0a0;
+    margin: 0;
+    /* SEM transform, SEM left, SEM position */
+}
+
+/* Instagram: absoluto no canto inferior esquerdo do .aba5 */
 .instagram {
     position: absolute;
     display: flex;
+    align-items: center;
+    bottom: 6px;
+    left: 10px;
     margin: 0;
-    left: 5px;
-    bottom: 0px;
-
 }
 
 #instalogo {
     width: 10px;
     height: 10px;
-    margin-right: 2.1px;
+    margin-right: 3px;
 }
 
 #instap {
@@ -7351,156 +7243,126 @@ header {
     cursor: default;
 }
 
-#btnagendar2 {
+/* ============================================================
+   ABA 2 PAG 2 — RODAPÉ (agendar.html)
+   Texto + Instagram centralizados; botão Voltar absoluto
+   ============================================================ */
+.aba2pag2 {
+    position: fixed;
     display: flex;
-    justify-self: center;
-    align-self: center;
-    background-color: #8caa86;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
+    flex-direction: column;
     align-items: center;
-    border: 0px;
-    width: 145px;
-    height: 25px;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: #1d221cb3;
+    border-top: 1px solid rgb(115, 151, 113);
+    bottom: 0;
+    z-index: 100;
+    height: auto;
+    padding: 8px 0 6px;
+    gap: 3px;
+    box-sizing: border-box;
+}
+
+#h3aba2pag2 {
+    color: #defad8;
+    text-shadow: 0px 0px 25px rgb(12, 20, 11);
+    cursor: default;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    /* SEM transform, SEM left */
+}
+
+.instagram2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#instalogo2 { width: 10px; margin-right: 2px; }
+
+#instap2 {
+    color: white;
+    font-weight: 600;
+    cursor: default;
     font-size: 11px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 3px rgb(53, 70, 51);
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 700;
-    border-radius: 8px;
+}
+
+/* Botão voltar centralizado pelo flex do pai */
+#btnvoltar {
+    background-color: transparent;
+    border: 0;
     cursor: pointer;
-    box-shadow: 0px 0px 15px #9de0a0;
-    z-index: 99999999;
-    margin-bottom: 12px;
-    transform: translateX(-50%);
-    left: 50%;
-    margin: 10px 0;
-    
-    
-    
-    
-
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* SEM transform, SEM position: absolute, SEM left, SEM top */
 }
 
-
-
-
-
-
-#header2 {
-   display: flex;
-   padding-left: 9px;
-   margin-top: 0;
-   height: 60px;
-   width: 100%;
-   background-color: #40533bb3;
-   font-family: "Inter Tight", sans-serif;
-   border-bottom: 4.4px solid rgb(115, 151, 113);
-   
+#voltarimg {
+    width: 55px;
 }
 
-#h1fisio2 {
-    position: relative;
-    font-size: 36px;
-    margin-top: 5px;
-    font-weight: 420;
-    text-shadow: 2px 2px 4.5px #163b04;
-    color: #ebfde6;
-    left: 5px;
-    cursor: pointer;
-     
-}
-
-#logo {
-    margin-top: 4.5px;
-    margin-left: 8px;
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-
-}
-
+/* ============================================================
+   PÁGINA DE AGENDAMENTO
+   ============================================================ */
 .aba2agendar {
     height: 250px;
     display: flex;
     flex-direction: column;
     background-image: url(BackgroundFundo.png);
     background-size: cover;
-    
 }
 
-
-
 #h1pag2 {
-    color: #ffffff;
+    color: #fff;
     font-weight: 630;
     font-size: 32px;
     text-shadow: 0px 0px 10px rgba(142, 165, 131, 0.699);
     cursor: default;
-    margin-top: 16px;
-    z-index: 100;
-    margin-top: 20px;
-    margin-left: 15px;
+    margin: 20px 0 0 15px;
     width: 250px;
-    margin-bottom: 0px;
-    
-
 }
 
 #ppag2 {
-    position: relative;
     color: #ccd8c7;
     font-weight: 630;
     font-size: 13px;
     text-shadow: 0px 0px 10px rgba(142, 165, 131, 0.699);
     cursor: default;
     width: 200px;
-    margin-top: 9px;
-    margin-left: 19px;
-    margin-bottom: 0px;
-    
-    
+    margin: 9px 0 0 19px;
 }
-
-.titulopag2 , .titulo2pag2 {
-    margin-left: 10px;
-}
-
 
 .escolheragenda {
     display: flex;
     position: relative;
-    justify-items: center;
     align-items: center;
     margin-left: 30px;
-    
-    
 }
-
 
 #expandiragenda {
     display: flex;
-    position: relative;
+    align-items: center;
+    justify-content: center;
     background-color: #8caa86;
-    border: 0px;
+    border: 0;
     width: 171px;
     height: 45px;
     font-size: 14px;
-    color: rgb(0, 0, 0);
+    color: #000;
     font-family: "Inter Tight", sans-serif;
     font-weight: 700;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 23px #6a9b6d;
     margin-top: 15px;
-    margin-left: 0;
-    
-    
-
 }
-
-
 
 .opcoesagenda {
     display: flex;
@@ -7522,47 +7384,36 @@ header {
     visibility: hidden;
     transform: translateY(-25px) scale(1.16);
     transition: all 0.4s cubic-bezier(.22,1,.36,1);
-    
-
-
 }
 
 .opcoesagenda.ativo {
     opacity: 1;
     visibility: visible;
     transform: translateY(0) scale(1);
-    
 }
 
-
-
-.opcaoservico, .opcaodata, .opcaohorario {
+.opcaoservico,
+.opcaodata,
+.opcaohorario {
     display: flex;
-    position: relative;
     flex-direction: column;
     gap: 10px;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    font-size: 15px; 
-   
-      
+    align-items: center;
+    font-size: 15px;
 }
 
 .opcoes {
     display: flex;
     gap: 30px;
-    padding: 0px;
+    padding: 0;
     border-bottom: 2px solid #8caa868c;
     border-top: 2px solid #8caa868c;
     width: 100%;
     margin-top: 80px;
-    
 }
 
-.opcaoservico select, .opcaohorario select {
+.opcaoservico select,
+.opcaohorario select {
     cursor: pointer;
     width: 85px;
     height: 35px;
@@ -7570,8 +7421,6 @@ header {
     background-color: #0000008f;
     color: #ffffff9f;
     border: 1px solid;
-
-
 }
 
 .opcaodata input {
@@ -7584,20 +7433,16 @@ header {
     border: 0.5px solid;
 }
 
-
-
-
 #btnconfirmar {
     display: flex;
-    order: 1;
-    background-color: #8caa86;
-    justify-content: center;
     align-items: center;
-    border: 0px;
+    justify-content: center;
+    background-color: #8caa86;
+    border: 0;
     width: 148px;
     height: 36px;
     font-size: 14px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-shadow: 2px 2px 3px rgb(53, 70, 51);
     font-family: "Inter Tight", sans-serif;
     font-weight: 700;
@@ -7605,16 +7450,13 @@ header {
     cursor: pointer;
     box-shadow: 0px 0px 23px #6a9b6d;
     z-index: 999999;
-
 }
 
 .botaoagendar {
-    width: auto;
     display: flex;
     position: absolute;
     right: 29px;
     bottom: 30px;
-    
 }
 
 #btnfechar {
@@ -7626,9 +7468,7 @@ header {
     cursor: pointer;
 }
 
-#imgfechar {
-    width: 30px;
-}
+#imgfechar { width: 30px; }
 
 #confirmacao {
     width: 170px;
@@ -7638,19 +7478,17 @@ header {
     bottom: 32px;
     text-align: center;
     font-size: 11px;
-    
 }
 
 #h2pag2 {
-    position: relative;
-    color: #ffffff;
+    color: #fff;
     font-weight: 630;
     font-size: 22px;
-    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    text-shadow: 0px 0px 20px #000;
     cursor: default;
     margin-left: 5px;
+    position: relative;
     bottom: 5px;
-    
 }
 
 #agendap {
@@ -7662,21 +7500,14 @@ header {
     width: 310px;
     top: 23px;
     margin-left: 73.5px;
-    text-shadow: 0px 0px 20px rgb(0, 0, 0);
-    
-    
-
+    text-shadow: 0px 0px 20px #000;
 }
 
-#relogio {
-    width: 63px;
-    height: 63px;
-}
+#relogio { width: 63px; height: 63px; }
 
 .fraseagenda {
     position: absolute;
     display: flex;
-    
     gap: 5px;
 }
 
@@ -7686,18 +7517,17 @@ header {
     position: relative;
     border-top: 2.4px solid rgba(115, 151, 113, 0.829);
     box-shadow: 0px -17px 15px #475f4841;
-    padding-bottom: 212px;
-    
-    
+    padding-bottom: 120px;
 }
 
+/* ============================================================
+   CARDS DE AGENDAMENTO
+   ============================================================ */
 .card-agendamento {
     font-family: "Poppins", sans-serif;
-    justify-items: center;
     align-items: center;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 13px;
     display: flex;
     flex-direction: row;
     background-color: #090a0848;
@@ -7708,14 +7538,10 @@ header {
     max-width: 100%;
     height: 75px;
     color: white;
-    margin-bottom: 13px;
     cursor: default;
     opacity: 1;
     transform: scale(1);
     transition: all 0.95s cubic-bezier(.22,1,.36,1);
-    
-
-    
 }
 
 .card-agendamento.removendo {
@@ -7731,6 +7557,7 @@ header {
 .btncancelar {
     position: absolute;
     display: flex;
+    align-items: center;
     right: 20px;
     top: 26px;
     font-family: "Poppins", sans-serif;
@@ -7743,115 +7570,10 @@ header {
     border: 1.2px solid #7a1111;
     border-radius: 12px;
     cursor: pointer;
-    justify-items: center;
-    align-items: center;
-    
-    
 }
 
-#imglixeira {
-    margin-right: 5px;
-    width: 20px;
-    height: 23px;
-}
-
-#listaagendamentos {
-    column-gap: 15px;
-}
-
-
-.aba2pag2 {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    height: 95px;
-    width: 100%;
-    max-width: 100%;
-    background-color: #1d221cb3;
-    border-top: 1px solid rgb(115, 151, 113);
-    box-shadow: 2px rgb(115, 151, 113);
-    bottom: 0px;
-    z-index: 100;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    padding: 0 0;
-    justify-content: center;
-    
-
-}
-
-.aba2pag2voltar{
-    align-items: center;
-    justify-items: center;
-}
-
-#h3aba2pag2 {
-    color: #defad8;
-    text-shadow: 0px 0px 25px rgb(12, 20, 11);
-    cursor: default;
-    margin-top: 14px;
-    font-size: 16px;
-    transform: none;
-    text-align: center;
-    left: auto;
-    
-    
-    
-}
-
-.instagram2 {
-    bottom: 2px;
-    left: 15px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    
-}
-
-#instalogo2 {
-    width: 10px;
-    margin-right: 2.1px;
-}
-
-#instap2 {
-    color: white;
-    font-weight: 600;
-    cursor: default;
-    font-size: 11px;
-}
-
-#btnvoltar {
-    background-color: transparent;
-    margin: 0;
-    padding-top: 0;
-    display: flex;
-    border: 0px;
-    cursor: pointer;
-    z-index: 999;
-    transform: translateX(-50%);
-    left: 50%;
-    position: absolute;
-    top: 13%;
-    
-
-    
-}
-
-#voltarimg {
-    margin-bottom: 13px;
-    width: 60px;
-}
-
-#h3agenda {
-    margin-left: 69px;
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    color: #d9ffd0;
-    cursor: default;
-    
-}
+#imglixeira { margin-right: 5px; width: 20px; height: 23px; }
+#listaagendamentos { column-gap: 15px; }
 
 #calendario {
     position: absolute;
@@ -7859,9 +7581,7 @@ header {
     margin-bottom: 3.3px;
 }
 
-.card-agendamento p {
-    margin-left: 36px;
-}
+.card-agendamento p { margin-left: 36px; }
 
 #calendarioagenda {
     position: absolute;
@@ -7870,20 +7590,58 @@ header {
     margin-left: 22px;
 }
 
+#h3agenda {
+    margin-left: 69px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: #d9ffd0;
+    cursor: default;
+}
+
 h6 {
     display: flex;
     color: #adbba4a8;
     font-family: "Poppins", sans-serif;
     margin-left: 30px;
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 15px;
     text-shadow: 0px 0px 15px #465349;
     cursor: default;
-    
-    
 }
 
+/* ============================================================
+   HOVER / ANIMAÇÕES
+   Regra única: scale(1.1) sem translateX para TODOS os
+   elementos, porque nenhum usa mais transform para centralizar.
+   ============================================================ */
+#ref4:hover,
+#ref5:hover,
+#btnagendar:hover,
+#btnagendar2:hover,
+#fisio1:hover,
+#fisio2:hover,
+#fisio3:hover,
+#btnanterior:hover,
+#btnproximo:hover,
+.box2:hover,
+#reflocal:hover,
+#horario:hover,
+#logingoogle:hover,
+#logoutgoogle:hover,
+#expandiragenda:hover,
+#btnvoltar:hover,
+.btncancelar:hover,
+#btnconfirmar:hover,
+#servico:hover,
+#data:hover,
+#horariosel:hover {
+    animation: passar 0.09s linear forwards;
+    transform: scale(1.1);
 }
 
+@keyframes passar {
+    0%   { transform: scale(1);   }
+    100% { transform: scale(1.1); }
+}
 
-
+} /* fim @media (max-width: 528px) */

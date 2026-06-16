@@ -7797,6 +7797,12 @@ header {
 .aba2pag2voltar{
     align-items: center;
     justify-items: center;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #h3aba2pag2 {
@@ -7808,13 +7814,15 @@ header {
     transform: none;
     text-align: center;
     left: auto;
+    margin-bottom: 0;
+    padding-top: 20px;
     
     
     
 }
 
 .instagram2 {
-    bottom: 2px;
+    bottom: 16px;
     left: 15px;
     position: relative;
     display: flex;
@@ -7840,12 +7848,14 @@ header {
     background-color: transparent;
     margin: 0;
     padding-top: 0;
-    display: flex;
     border: 0px;
     cursor: pointer;
     z-index: 999;
-    position: absolute;
-    top: 44%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
     
 
     
@@ -8995,6 +9005,13 @@ header {
 .aba2pag2voltar{
     align-items: center;
     justify-items: center;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 #h3aba2pag2 {
@@ -9006,13 +9023,15 @@ header {
     transform: none;
     text-align: center;
     left: auto;
+    margin-bottom: 0;
+    padding-top: 20px;
     
     
     
 }
 
 .instagram2 {
-    bottom: 2px;
+    bottom: 14px;
     left: 15px;
     position: relative;
     display: flex;
@@ -9038,12 +9057,14 @@ header {
     background-color: transparent;
     margin: 0;
     padding-top: 0;
-    display: flex;
     border: 0px;
     cursor: pointer;
     z-index: 999;
-    position: absolute;
-    top: 44%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
     
 
     

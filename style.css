@@ -8998,6 +8998,7 @@ header {
     padding-bottom: 0px;
     padding: 0 0;
     justify-content: center;
+    align-content: center;
     
 
 }
@@ -9011,6 +9012,8 @@ header {
     align-content: center;
     align-items: center;
     flex-direction: column;
+    justify-self: center;
+    align-self: center;
 
 }
 
@@ -9064,6 +9067,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: center;
+    align-self: center;
     margin-top: 0;
     
 

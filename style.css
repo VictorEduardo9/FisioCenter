@@ -45,8 +45,8 @@ header {
 #logo {
     margin-top: 4.5px;
     margin-left: 8px;
-    width: 70px;
-    height: 70px;
+    width: 48px;
+    height: 48px;
     cursor: pointer;
 
 }
@@ -6710,7 +6710,7 @@ h6 {
 
 
 
-@media (max-width: 528px) {
+@media (max-width: 776px) {
 body {
     background-color: #222224;
     max-width: 100%;
@@ -7923,6 +7923,1235 @@ h6 {
     margin-left: 30px;
     margin-top: 0px;
     font-size: 15px;
+    text-shadow: 0px 0px 15px #465349;
+    cursor: default;
+    
+    
+}
+}
+
+
+
+
+@media (max-width: 410px) {
+body {
+    background-color: #222224;
+    max-width: 100%;
+    margin: 0;
+    font-family: "Inter Tight", sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+header {
+   display: flex;
+   padding-left: 9px;
+   margin-top: 0;
+   height: 60px;
+   width: 100%;
+   background-color: #40533bb3;
+   font-family: "Inter Tight", sans-serif;
+   border-bottom: 4.4px solid rgb(115, 151, 113);
+   
+}
+
+#h1fisio {
+    position: relative;
+    font-size: 33px;
+    margin-top: 5px;
+    font-weight: 420;
+    text-shadow: 2px 2px 4.5px #163b04;
+    color: #ebfde6;
+    left: 3px;
+    cursor: pointer;
+     
+}
+
+#logo {
+    margin-top: 4.5px;
+    left: 168px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+.arealogin {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 2px;
+    top: 5px;
+    
+}
+
+#usuario {
+    color: white;
+    font-size: 10px;
+    font-weight: 560;
+    margin-bottom: 5px;
+    cursor: default;
+
+}
+
+#logingoogle {
+    right: 5px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#googleimg {
+    width: 130px;
+    height: auto;
+    
+}
+
+#logoutgoogle {
+    right: 5px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#sairimg {
+    width: 60px;
+    height: auto;
+    
+}
+
+.aba1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url(Ref1.jpg);
+    background-size: cover;
+    height: 250px;
+    max-width: 100%;
+    border-bottom: 1.6px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 35px rgb(115, 151, 113);
+    align-items: center;
+    
+}
+
+.box1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    background-color: #000000b3;
+    height: 180px;
+    box-shadow: 0px 0px 20px #000;
+    justify-self: center;
+    width: 100%;
+    align-items: center;
+    
+    
+    
+
+}
+
+
+.frases1a {
+    position: relative;
+    align-self: center;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 8px;
+    color: #d9ffd0;
+    text-shadow: 2px 2px 1px rgb(97, 126, 93);
+    top: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+    
+}
+
+#h2t1 {
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    
+
+}
+
+#pt1 {
+    position: relative;
+    font-weight: 530;
+    font-family: "Inter Tight", sans-serif;
+    color: #b9cebb;
+    text-shadow: 2px 2px 3px rgb(41, 56, 41);
+    font-size: 9px;
+    cursor: default;
+    width: 100%;     
+    max-width: 380px;
+    margin: 0;
+    align-self: center;
+    text-align: center;
+    transform: translateX(-40px);
+    
+ 
+
+    
+}
+
+
+
+#h2t1, #pt1, #h2t2, #pt2 {
+    text-align: center;
+    max-width: 380px;
+    
+}
+
+.frase1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;          
+    text-align: center;
+    
+    
+}
+
+
+
+
+.aba2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url(Ref2.jpg);
+    background-size: cover;
+    height: 250px;
+    max-width: 100%;
+    border-bottom: 1.6px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 35px rgb(115, 151, 113);
+    align-items: center;
+}
+
+
+
+.frases2a {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 9px;
+    color: #d9ffd0;
+    text-shadow: 2px 2px 1px rgb(97, 126, 93);
+    top: 18px;
+    
+    
+}
+
+#h2t2 {
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+#pt2 {
+    width: 340px;
+    font-weight: 530;
+    font-family: "Inter Tight", sans-serif;
+    color: #b9cebb;
+    text-shadow: 2px 2px 3px rgb(41, 56, 41);
+    font-size: 8px;
+    cursor: default;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    cursor: default;
+    text-align: center;
+
+}
+
+
+.frase2 {
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#btnagendar {
+    position: absolute;
+    top: 95px;
+    background-color: #8caa86;
+    border: 0;
+    width: 155px;
+    height: 25px;
+    font-size: 11px;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #9de0a0;
+    left: 97px;
+    justify-self: center;
+    
+
+    
+    
+
+}
+
+#btntrocar1 {
+    position: absolute;
+    right: 5px;
+    top: 220px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    border-radius: 12px;
+    
+
+}
+
+#btntrocar2 {
+    position: absolute;
+    left: 5px;
+    top: 220px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+#btnproximo {
+    width: 18px;
+}
+
+#btnanterior {
+    width: 18px;
+    
+    
+}
+
+.aba1, .aba2 {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.aba3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 870px;
+    border-bottom: 1.6px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 35px rgb(115, 151, 113);
+    
+}
+
+.titulo {
+    overflow: hidden;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#tituloaba3 {
+    color: #ebfde6e6;
+    font-weight: 630;
+    font-size: 23px;
+    text-shadow: 0px 0px 10px rgb(142, 165, 131);
+    animation: deslizar 32s linear infinite;
+    cursor: default;
+}
+
+
+@keyframes deslizar {
+    100% {
+        transform:translateX(100%)
+    }
+
+    0% {
+        transform: translateX(-45%);
+    }
+}
+
+
+
+
+.fisioterapia {
+    margin-top: 0px;
+    margin-left: 10px;
+    display: flex;
+    gap: 7px;
+    border-bottom: 2px solid #8caa868c;
+    padding-bottom: 30px;
+    max-width: max-content;
+   
+}
+
+#ref5 {
+    width: 140px;
+    height: 100px;
+    border-radius: 18px;
+    border: 1.8px solid rgb(115, 151, 113);
+    box-shadow: 0px 0px 13px rgba(115, 151, 113, 0.89);
+}
+
+#frasefisio {
+    color: #ddeedf;
+    width: 190px;
+    font-size: 10px;
+    margin-top: 2px;
+    font-weight: 300;
+    margin-left: 10px;
+    cursor: default;
+    font-family: "Poppins";
+    text-shadow: 0px 0px 35px #010a00be;
+
+}
+
+.pilates {
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    gap: 7px;
+    border-bottom: 2px solid #8caa868c;
+    padding-bottom: 30px;
+    max-width: max-content;
+    
+}
+
+#ref4 {
+    width: 140px;
+    height: 100px;
+    border-radius: 18px;
+    border: 1.8px solid rgb(115, 151, 113);
+    box-shadow: 0px 0px 13px rgba(115, 151, 113, 0.89);
+}
+
+#frasepilates {
+    color: #ddeedf;
+    width: 175px;
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: 300;
+    margin-left: 10px;
+    cursor: default;
+    font-family: "Poppins";
+    text-shadow: 0px 0px 35px #010a00be;
+
+}
+
+#icone1img , #icone2img {
+    width: 60px;
+    height: 60px;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+}
+
+.box2 {
+    position: absolute;
+    box-sizing: content-box;
+    width: 280px;
+    height: 400px;
+    background-color: #00000023;
+    box-shadow: 0px 0px 30px #00000054;
+    border: 1.5px solid #00000023;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 418px;
+    align-items: center;
+    
+    
+}
+
+#h1box {
+    font-size: 11px;
+    justify-self: center;
+    align-self: center;
+    color: #e9ffe5;
+    text-shadow: 0px 0px 22.5px rgb(160, 160, 160);
+    cursor: default;
+}
+
+#pbox {
+    color: #c6ddc2;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5px;
+    font-size: 9px;
+    cursor: default;
+    
+}
+
+#reflocal {
+    margin-top: 1px;
+    justify-self: center;
+    align-self: center;
+    width: 135px;
+    height: auto;
+    border-radius: 16px;
+}
+
+#p1box {
+    color: #738570;
+    justify-self: center;
+    align-self: center;
+    margin-top: 6px;
+    font-size: 9px;
+    text-shadow: 0px 0px 6.5px rgb(0, 0, 0);
+    cursor: default;
+}
+
+#horario {
+    justify-self: center;
+    align-self: center;
+    width: 158px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+#ref4:hover, #ref5:hover , #btnagendar:hover , #btnagendar2:hover , #fisio1:hover ,
+ #fisio2:hover , #fisio3:hover , #btnanterior:hover , #btnproximo:hover ,
+ .box2:hover , #reflocal:hover , #horario:hover , #logingoogle:hover , #logoutgoogle:hover ,
+ #expandiragenda:hover , #btnvoltar:hover , .btncancelar:hover , #btnconfirmar:hover,
+ #servico:hover , #data:hover , #horariosel:hover{
+    animation: passar 0.09s linear;
+    transform: scale(1.1);
+}
+
+@keyframes passar {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+    
+}
+
+.aba4 {
+    position: relative;
+    height: 240px;
+    border-bottom: 1.6px solid rgb(115, 151, 113);
+    box-shadow: 0px 2px 25px rgb(115, 151, 113);
+    background-color: #0000001a;
+    align-items: center;
+    
+    
+}
+
+#equipe {
+    color: #eaffe7;
+    font-weight: 630;
+    font-size: 18px;
+    cursor: default;
+    margin-top: 13px;
+    z-index: 100;
+    margin-left: 20px;
+    width: 800px;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 25px #010a00be;
+    
+    
+}
+
+.equipediv {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#aba4p {
+    position: absolute;
+    display: flex;
+    margin-left: 70px;
+    top: 30px;
+    color: #ccd8c7ad;
+    font-weight: 630;
+    font-size: 11.5px;
+    text-shadow: 0px 0px 25px #010a00be;
+    cursor: default;
+    width: 510px;
+    margin-top: 0;
+    
+
+    
+}
+
+.funcionarios {
+    display: flex;
+    position: absolute;
+    justify-self: center;
+    gap: 15px;
+    justify-content: center;
+    top: 100px;
+    
+}
+
+#fisio1, #fisio2, #fisio3 {
+    width: 93px;
+    border-radius: 18px;
+    box-shadow: 0 0 15px #CDCBCC;
+}
+
+#pfisio {
+    color: rgb(245, 238, 238);
+    text-shadow: 0px 0px 10px rgb(161, 202, 145);
+    cursor: default;
+    font-size: 7px;
+}
+
+.funcionario1, .funcionario2, .funcionario3 {
+    justify-items: center;
+    align-items: center;
+}
+
+.aba5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1d221cb3;
+    border-top: 1px solid rgb(115, 151, 113);
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+    gap: 6px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    
+    
+    
+
+}
+
+.aba5voltar{
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+
+
+#btnagendar2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8caa86;
+    border: 0;
+    width: 125px;
+    height: 19px;
+    font-size: 9px;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #9de0a0;
+    margin-bottom: 12px;
+    margin: 10px 0;
+
+}
+    
+.aba5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1d221cb3;
+    border-top: 1px solid rgb(115, 151, 113);
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+    gap: 6px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    
+
+
+}
+
+.aba5voltar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#h3aba5 {
+    text-align: center;
+    cursor: default;
+    color: #defad8;
+    text-shadow: 0px 0px 25px rgb(12, 20, 11);
+    font-size: 13px;
+    margin-top: 0;
+    margin: 0;
+    
+}
+
+.instagram {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    left: 3px;
+    bottom: 0px;
+
+}
+
+#instalogo {
+    width: 7px;
+    height: 7px;
+    margin-right: 2.1px;
+}
+
+#instap {
+    font-size: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+}
+
+
+
+    
+    
+    
+
+
+
+
+
+
+#header2 {
+   display: flex;
+   padding-left: 9px;
+   margin-top: 0;
+   height: 60px;
+   width: 100%;
+   background-color: #40533bb3;
+   font-family: "Inter Tight", sans-serif;
+   border-bottom: 4.4px solid rgb(115, 151, 113);
+   
+}
+
+#h1fisio2 {
+    position: relative;
+    font-size: 33px;
+    margin-top: 5px;
+    font-weight: 420;
+    text-shadow: 2px 2px 4.5px #163b04;
+    color: #ebfde6;
+    left: 3px;
+    cursor: pointer;
+     
+}
+
+#logo {
+    margin-top: 4.5px;
+    margin-left: 8px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
+}
+
+.aba2agendar {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(BackgroundFundo.png);
+    background-size: cover;
+    
+}
+
+
+
+#h1pag2 {
+    color: #ffffff;
+    font-weight: 630;
+    font-size: 32px;
+    text-shadow: 0px 0px 10px rgba(142, 165, 131, 0.699);
+    cursor: default;
+    margin-top: 16px;
+    z-index: 100;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 250px;
+    margin-bottom: 0px;
+    
+
+}
+
+#ppag2 {
+    position: relative;
+    color: #ccd8c7;
+    font-weight: 630;
+    font-size: 13px;
+    text-shadow: 0px 0px 10px rgba(142, 165, 131, 0.699);
+    cursor: default;
+    width: 200px;
+    margin-top: 9px;
+    margin-left: 19px;
+    margin-bottom: 0px;
+    
+    
+}
+
+.titulopag2 , .titulo2pag2 {
+    margin-left: 10px;
+}
+
+
+.escolheragenda {
+    display: flex;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    margin-left: 30px;
+    
+    
+}
+
+
+#expandiragenda {
+    display: flex;
+    position: relative;
+    background-color: #8caa86;
+    border: 0px;
+    width: 171px;
+    height: 45px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 23px #6a9b6d;
+    margin-top: 15px;
+    margin-left: 0;
+    
+    
+
+}
+
+
+
+.opcoesagenda {
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 120px;
+    background-color: #090a08e5;
+    border: 1px solid #475f48;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px #475f48;
+    width: 85%;
+    height: auto;
+    min-height: 265px;
+    color: rgb(215, 240, 208);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-25px) scale(1.16);
+    transition: all 0.4s cubic-bezier(.22,1,.36,1);
+    
+
+
+}
+
+.opcoesagenda.ativo {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    
+}
+
+
+
+.opcaoservico, .opcaodata, .opcaohorario {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    font-size: 15px; 
+   
+      
+}
+
+.opcoes {
+    display: flex;
+    gap: 30px;
+    padding: 0px;
+    border-bottom: 2px solid #8caa868c;
+    border-top: 2px solid #8caa868c;
+    width: 100%;
+    margin-top: 80px;
+    
+}
+
+.opcaoservico select, .opcaohorario select {
+    cursor: pointer;
+    width: 70px;
+    height: 35px;
+    border-radius: 7px;
+    background-color: #0000008f;
+    color: #ffffff9f;
+    border: 1px solid;
+    font-size: 9px;
+
+
+}
+
+.opcaodata input {
+    cursor: pointer;
+    width: 70px;
+    height: 33px;
+    border-radius: 7px;
+    background-color: #0000008f;
+    color: #ffffff9f;
+    border: 0.5px solid;
+    font-size: 9px;
+}
+
+
+
+
+#btnconfirmar {
+    display: flex;
+    order: 1;
+    background-color: #8caa86;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    width: 148px;
+    height: 36px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(53, 70, 51);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 23px #6a9b6d;
+    z-index: 999999;
+
+}
+
+.botaoagendar {
+    width: auto;
+    display: flex;
+    position: absolute;
+    right: 19px;
+    bottom: 30px;
+    
+}
+
+#btnfechar {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#imgfechar {
+    width: 26px;
+}
+
+#confirmacao {
+    width: 150px;
+    display: flex;
+    padding-right: 170px;
+    position: absolute;
+    bottom: 32px;
+    text-align: center;
+    font-size: 8px;
+    
+}
+
+#h2pag2 {
+    position: relative;
+    color: #ffffff;
+    font-weight: 630;
+    font-size: 20px;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    cursor: default;
+    margin-left: 5px;
+    bottom: 5px;
+    
+}
+
+#agendap {
+    position: absolute;
+    color: #ccd8c7;
+    font-weight: 430;
+    font-size: 12px;
+    cursor: default;
+    width: 310px;
+    top: 23px;
+    margin-left: 73.5px;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    
+    
+
+}
+
+#relogio {
+    width: 56px;
+    height: 56px;
+}
+
+.fraseagenda {
+    position: absolute;
+    display: flex;
+    
+    gap: 5px;
+}
+
+.meusagendamentos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-top: 2.4px solid rgba(115, 151, 113, 0.829);
+    box-shadow: 0px -17px 15px #475f4841;
+    padding-bottom: 212px;
+    
+    
+}
+
+.card-agendamento {
+    font-family: "Poppins", sans-serif;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #090a0848;
+    border: 1px solid #475f48;
+    box-shadow: 0px 0px 35px #475f4841;
+    border-radius: 18px;
+    padding: 10px;
+    max-width: 100%;
+    height: 75px;
+    color: white;
+    margin-bottom: 13px;
+    cursor: default;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.95s cubic-bezier(.22,1,.36,1);
+    font-size: 20px;
+    
+
+    
+}
+
+.card-agendamento.removendo {
+    opacity: 0;
+    transform: scale(0.85);
+}
+
+.card-agendamento.novo {
+    opacity: 0;
+    transform: translateY(35px) scale(0.85);
+}
+
+.btncancelar {
+    position: absolute;
+    display: flex;
+    right: 12px;
+    top: 26px;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 330;
+    color: #7a1111;
+    text-shadow: 2px 2px 3px rgb(53, 13, 4);
+    height: 45px;
+    background-color: transparent;
+    border: 1.2px solid #7a1111;
+    border-radius: 12px;
+    cursor: pointer;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+#imglixeira {
+    margin-right: 5px;
+    width: 15px;
+    height: 18px;
+}
+
+#listaagendamentos {
+    column-gap: 15px;
+}
+
+
+.aba2pag2 {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 95px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #1d221cb3;
+    border-top: 1px solid rgb(115, 151, 113);
+    box-shadow: 2px rgb(115, 151, 113);
+    bottom: 0px;
+    z-index: 100;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 0 0;
+    justify-content: center;
+    
+
+}
+
+.aba2pag2voltar{
+    align-items: center;
+    justify-items: center;
+}
+
+#h3aba2pag2 {
+    color: #defad8;
+    text-shadow: 0px 0px 25px rgb(12, 20, 11);
+    cursor: default;
+    margin-top: 14px;
+    font-size: 16px;
+    transform: none;
+    text-align: center;
+    left: auto;
+    
+    
+    
+}
+
+.instagram2 {
+    bottom: 2px;
+    left: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#instalogo2 {
+    width: 10px;
+    margin-right: 2.1px;
+}
+
+#instap2 {
+    color: white;
+    font-weight: 600;
+    cursor: default;
+    font-size: 11px;
+}
+
+#btnvoltar {
+    background-color: transparent;
+    margin: 0;
+    padding-top: 0;
+    display: flex;
+    border: 0px;
+    cursor: pointer;
+    z-index: 999;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    top: 44%;
+    
+
+    
+}
+
+#voltarimg {
+    margin-bottom: 13px;
+    width: 60px;
+}
+
+#h3agenda {
+    margin-left: 56px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #d9ffd0;
+    cursor: default;
+    
+}
+
+#calendario {
+    position: absolute;
+    width: 25px;
+    margin-bottom: 3.3px;
+}
+
+.card-agendamento p {
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+#calendarioagenda {
+    position: absolute;
+    width: 30px;
+    top: 19px;
+    margin-left: 18px;
+}
+
+h6 {
+    display: flex;
+    color: #adbba4a8;
+    font-family: "Poppins", sans-serif;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-size: 13px;
     text-shadow: 0px 0px 15px #465349;
     cursor: default;
     

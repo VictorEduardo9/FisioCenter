@@ -7687,7 +7687,7 @@ header {
     border-top: 2.4px solid rgba(115, 151, 113, 0.829);
     box-shadow: 0px -17px 15px #475f4841;
     padding-bottom: 212px;
-    overflow: scroll;
+    
     
 }
 
@@ -7833,7 +7833,7 @@ header {
     transform: translateX(-50%);
     left: 50%;
     position: absolute;
-    margin-top: 4px;
+    margin-top: 1px;
     
 
     
@@ -7881,11 +7881,6 @@ h6 {
     cursor: default;
     
     
-}
-
-
-#html2 , #body2 {
-    overflow: hidden;
 }
 
 }

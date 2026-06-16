@@ -7292,6 +7292,12 @@ header {
     height: auto;
     padding: 10px 0;
     gap: 6px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
     
     
     
@@ -7299,9 +7305,12 @@ header {
 }
 
 .aba5voltar{
-    align-items: center;
+    justify-content: center;
+    align-content: center;
     justify-items: center;
-    
+    align-items: center;
+    justify-self: center;
+    align-self: center;
     
 }
 
@@ -7816,7 +7825,7 @@ header {
     transform: translateX(-50%);
     left: 50%;
     position: absolute;
-    top: 13%;
+    top: 44%;
     
 
     

@@ -7795,6 +7795,7 @@ header {
 }
 
 .aba2pag2voltar{
+    display: flex;
     align-items: center;
     justify-items: center;
     position: relative;
@@ -7815,7 +7816,7 @@ header {
     text-align: center;
     left: auto;
     margin-bottom: 0;
-    padding-top: 20px;
+    padding-top: 2dvh;
     
     
     
@@ -7851,11 +7852,11 @@ header {
     border: 0px;
     cursor: pointer;
     z-index: 999;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
+    
+    
     
 
     
@@ -9004,6 +9005,7 @@ header {
 }
 
 .aba2pag2voltar{
+    display: flex;
     align-items: center;
     justify-items: center;
     position: relative;
@@ -9012,8 +9014,7 @@ header {
     align-content: center;
     align-items: center;
     flex-direction: column;
-    justify-self: center;
-    align-self: center;
+    
 
 }
 
@@ -9063,12 +9064,9 @@ header {
     border: 0px;
     cursor: pointer;
     z-index: 999;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-self: center;
-    align-self: center;
     margin-top: 0;
     
 

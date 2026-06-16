@@ -7645,13 +7645,13 @@ header {
 }
 
 #confirmacao {
-    width: 170px;
+    width: 160px;
     display: flex;
     padding-right: 170px;
     position: absolute;
-    bottom: 32px;
+    bottom: 31px;
     text-align: center;
-    font-size: 11px;
+    font-size: 10px;
     
 }
 
@@ -8848,7 +8848,7 @@ header {
     display: flex;
     padding-right: 170px;
     position: absolute;
-    bottom: 32px;
+    bottom: 30px;
     text-align: center;
     font-size: 8px;
     

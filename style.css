@@ -7326,17 +7326,6 @@ header {
 
 }
 
-.aba5voltar{
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    
-}
-
-
 
 #btnagendar2 {
     position: relative;
@@ -7360,27 +7349,6 @@ header {
 
 }
     
-.aba5 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #1d221cb3;
-    border-top: 1px solid rgb(115, 151, 113);
-    align-items: center;
-    height: auto;
-    padding: 10px 0;
-    gap: 6px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    
-
-
-}
 
 .aba5voltar{
     width: 100%;
@@ -8585,34 +8553,6 @@ header {
 
 }
     
-.aba5 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #1d221cb3;
-    border-top: 1px solid rgb(115, 151, 113);
-    align-items: center;
-    height: auto;
-    padding: 10px 0;
-    gap: 6px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    
-
-
-}
-
-.aba5voltar{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 #h3aba5 {

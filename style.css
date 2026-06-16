@@ -7844,8 +7844,6 @@ header {
     border: 0px;
     cursor: pointer;
     z-index: 999;
-    transform: translateX(-50%);
-    left: 50%;
     position: absolute;
     top: 44%;
     
@@ -9044,8 +9042,6 @@ header {
     border: 0px;
     cursor: pointer;
     z-index: 999;
-    transform: translateX(-50%);
-    left: 50%;
     position: absolute;
     top: 44%;
     

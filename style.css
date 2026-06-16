@@ -111,10 +111,14 @@ header {
 .box1 {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
     background-color: #000000b3;
-    height: 350px;
+    height: 180px;
+    width: 100%;
     box-shadow: 0px 0px 20px #000;
+    box-sizing: border-box;
     
     
 
@@ -159,13 +163,6 @@ header {
 
     
 }
-
-
-
-
-
-
-
 
 
 .aba2 {
@@ -562,23 +559,23 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 150px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: #1d221cb3;
     border-top: 1px solid rgb(115, 151, 113);
-    box-shadow: 2px rgb(115, 151, 113);
-    bottom: 0px;
-    z-index: 100;
-    flex: 1;
     height: auto;
-    padding: 0;
-    
-
+    padding: 12px 0 28px;  
+    gap: 8px;
+    box-sizing: border-box;
 }
-
-.aba5voltar{
+ 
+.aba5voltar {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    gap: 8px;
+    width: 100%;
 }
 
 #h3aba5 {

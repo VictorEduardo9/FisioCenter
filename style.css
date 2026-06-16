@@ -6963,7 +6963,7 @@ header {
 }
 
 #btnagendar {
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6979,8 +6979,8 @@ header {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 15px #9de0a0;
-    margin-top: 12px;
-    margin: 0;
+    margin-top: 27px;
+    margin-left: 15px;
     
 
 }

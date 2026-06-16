@@ -5834,7 +5834,7 @@ header {
 #btntrocar1 {
     position: absolute;
     right: 17px;
-    top: 300px;
+    top: 360px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -5846,12 +5846,13 @@ header {
 #btntrocar2 {
     position: absolute;
     left: 17px;
-    top: 300px;
+    top: 360px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
     border-radius: 12px;
 }
+
 
 
 #btnproximo {
